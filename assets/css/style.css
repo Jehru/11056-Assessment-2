@@ -64,9 +64,14 @@ nav a {
     margin: auto;
 }
 
-#floorplanimg {
-    width: 90%;
-    align-content: center;
+.imagescolumn {
+    float: left;
+    padding: 10px; 
+    width: 50%;
+}
+
+.imagesrow {
+    display: flex;
 }
 
 #statmentofsignificance {
@@ -77,6 +82,7 @@ nav a {
 
 footer { 
     background-color: lightgrey;
+    width: 100%;
     text-align: center;
     padding: 35px;
 }
