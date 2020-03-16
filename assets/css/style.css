@@ -1,32 +1,46 @@
+/* Body elements */
 body {
     font-family: sans-serif;
 }
 
-nav {
-  overflow: hidden;
-  background-color: #333;
+
+/* Navigation elements */
+#navigation{
+    list-style-type: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 14px 16px 0px;
+    overflow: hidden;
 }
 
-nav ul{
-    list-style-type: none;
+#logo {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+}
+
+.navelement {
     float: right;
+    padding: 14px 16px;
 }
 
 nav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    color: black;
+    text-decoration: none;
 }
 
-nav li {
-    display: inline;
+#navigation li:hover {
+    text-decoration: underline;
+}
+
+#navigation li:active {
+    text-decoration: underline;
 }
 
 
-/* HERO CONTENT */
+/* Hero Content */
 #hero-image {
     background-image:
         url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
@@ -42,8 +56,27 @@ nav li {
     font-size: 25px;
 }
 
+
+/* Introduction */
 #introduction {
     padding-left: 25%;
     padding-right: 25%;
     margin: auto;
+}
+
+#floorplanimg {
+    width: 90%;
+    align-content: center;
+}
+
+#statmentofsignificance {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: auto;
+}
+
+footer { 
+    background-color: lightgrey;
+    text-align: center;
+    padding: 35px;
 }
