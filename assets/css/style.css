@@ -27,7 +27,7 @@ h1 {
 h2 {
     font-size: 30px; 
     font-weight: bold;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 ul {
@@ -35,9 +35,18 @@ ul {
     margin-left: 0;
     padding-left: 0;
 }
+
+a {
+    color: darkorchid;
+    text-decoration: none;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
 /* ------------------ */
 
-/* Navigation elements */
+/* NAVIGATION ELEMENTS*/
 #navigation{
     list-style-type: none;
     font-size: 17px;
@@ -53,9 +62,9 @@ ul {
 
 #logo {
     float: left;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    padding: 14px 16px;
+    margin: 14px 16px;
     font-weight: bold;
     display: inline-block;
     
@@ -71,14 +80,15 @@ ul {
     background-color: indianred;
 }
 
-nav a {
-    color: black;
-    text-decoration: none;
-}
+    nav a {
+        color: black;
+        text-decoration: none;
+    }
 
-/* Active and Hover */
+/* ACTIVE AND HOVER */
 #navigation li:hover {
     text-decoration: underline;
+    background-color: white;
 }
 
 #navigation li:active {
@@ -88,13 +98,12 @@ nav a {
 
 /*HERO CONTENT*/
 #hero-image {
+    height: 600px;
     background-image:
         url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
     background-size: cover;
-    height: 600px;
     overflow: hidden;
     background-position: center;
-    position: relative;
     background-attachment: fixed;
 }
 
@@ -104,42 +113,38 @@ nav a {
     text-align: center;
     font-size: 25px;
 }
+
+/*Testing with image from week 7*/
+#hero-img-hidden {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* ---------------- */
 
 /* Introduction */
-#introduction {
+.wrapper {
     width: 60%;
-/*
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 5%;
-    padding-top: 5%;
-*/
-    margin: auto;
+    margin: 100px auto 100px;
     line-height: 23px; 
     
 }
 
 .imagescolumn {
     float: left;
-    width: 50%;
+    width: 45%;
 /*    padding: 5px;*/
+    margin:0 auto;
 }
+
+    .imagescolumn:hover {
+        opacity: 0.6;
+    }
 
 .imagesrow {
     display: flex;
-}
-
-#statmentofsignificance {
-    width: 60%;
-/*
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 5%;
-    padding-top: 5%;
-*/
-    margin: auto;
-    line-height: 23px; 
 }
 
 
@@ -147,5 +152,4 @@ footer {
     background-color: lightgrey;
     width: 100%;
     text-align: center;
-/*    padding: 35px;*/
 }
