@@ -100,7 +100,7 @@ a {
         url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
     background-size: cover;
     overflow: hidden;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -121,11 +121,10 @@ a {
 
 /* ---------------- */
 
-/* Wrapper Text*/
-
+/* Introduction */
 .wrapper {
-    width: 35%;
-    margin: 125px auto 125px;
+    width: 60%;
+    margin: 100px auto 100px;
     line-height: 23px; 
     
 }
