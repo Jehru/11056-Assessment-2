@@ -149,6 +149,9 @@ a {
 
 footer { 
     background-color: lightgrey;
-    width: 100%;
+    padding: 100px;
     text-align: center;
+}
+footer ul li {
+    margin: 0 0 20px 0;
 }
