@@ -131,7 +131,7 @@ a {
 /* Wrapper Text*/
 
 .wrapper {
-    width: 35%;
+    width: 30%;
     margin: 125px auto 125px;
     line-height: 23px; 
     
@@ -139,10 +139,8 @@ a {
 
 .imagescolumn {
     float: left;
-    width: 45%;
-/*    padding: 5px;*/
+    width: 35%;
     margin:0 auto;
-/*    object-fit: cover;*/
 }
 
 .imagesrow {
