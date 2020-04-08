@@ -3,24 +3,35 @@
     <head>
         <title>Churchill House - Responsive Website </title>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <script src="../assets/script/scrollingnav.js"></script>
     </head>
 <body> 
 <header>
-<nav>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="description.html">The Description</a></li>
-        <li><a href="history.html">The History</a></li>
-        <li><a href="">The Architect</a></li>
-    </ul>
-</nav>    
+    <nav>
+        <ul id="navigation">
+            <li id="logo"><a href="../index.html">Home</a></li>
+            <div class="navelement">
+                <li><a href="description.html">The Description</a></li>
+                <li><a href="history.html">The History</a></li>
+                <li><a href="">The Architect</a></li>
+            </div>
+        </ul>
+    </nav> 
+    
+    <!-- Top of Page-->
+    <a id="top"></a>
+    
 </header>
     
 <main>
     
+<!-- Insert the banner image here-->
+    
 <h1>The Architect</h1>   
 
-    <section> 
+<!-- About the Architect Section-->
+    <section class="wrapper"> 
         <h2>Robin Boyd</h2>
         <p>Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra.</p>
             
@@ -62,9 +73,16 @@
     
 </main>
     
-    
+<!--Footer -->
 <footer>
-    <p>This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2020.</p>
+    <p>This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2020.</p>
+        <p>Continue reading the other pages:</p>
+        <ul>
+            <li><a href="pages/description.html">Description</a></li>
+            <li><a href="pages/history.html">History</a></li>
+            <li><a href="pages/architect.html">Architect</a></li>
+        </ul>
+    <a href="#top">Top of page?</a>
 </footer>
             
 </body>
