@@ -179,33 +179,38 @@ a {
     width: 35%;
 }
 
-.imagesrow-foo {
-    display: flex;
-    background-color: lightgrey;
-    padding: 20px 0 20px 0;
-}
-/*---------------*/
 /*----------------*/
-/*TESTING FLEXBOX*/
+/*IMAGE AND TEXT*/
 
 .flex-container {
-  display: flex;
-  background-color: DodgerBlue;
+    display: flex;
+    background-color: grey;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .flex-container div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  width: 50%;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 60px;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
 }
 
+.flex-container div p{
+    font-size: 17px;
+    line-height: 23px;
+}
+
+
 .flex-container div img{
+    display: inline-block;
+    vertical-align: middle;
     width: 100%;
 }
 
-/*---------------*/
+
 /*---------------*/
 /* IMAGES */
 .imagesrow {
@@ -221,8 +226,14 @@ a {
 }
 
 .big-img {
-    display:block;
+    display: block;
     margin: 0 auto;
+}
+
+.big-img-width {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 
 /*-----------*/
