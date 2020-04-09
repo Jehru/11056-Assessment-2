@@ -10,7 +10,7 @@
 <header>
     <nav>
         <ul id="navigation">
-            <li id="logo"><a href="../index.html">Home</a></li>
+            <li id="logo"><a href="../index.html">Churchill House</a></li>
             <div class="navelement">
                 <li><a href="">The Description</a></li>
                 <li><a href="history.html">The History</a></li>
@@ -26,17 +26,27 @@
     
 <main>
     
-<!-- Insert Banner image here-->
+<!--Hero Content-->
+<!--I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers-->
+<div class="filter-alt">    
+    <div id="hero-image-desc">
+        <img id="hero-img-hidden" src="../assets/images/churchill-house-4.jpg">
+    </div>
+</div>
     
-<h1>Description</h1>
-    
+
+<h1 id="hero-text-alt">Description</h1>
+
     <!--Brief intro-->
     <section class="wrapper">
+        <h2>Intro</h2>
         <p>Churchill House was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete.</p>
 
         <p>The complex comprises a number of components: the main building with its east and south wings, the separate north wing or pavilion, the pool and the rear carpark. The main building forms an L shape in plan, and with the north wing it encloses on three sides a courtyard in which the pool is located. The main building is of three storeys with a four storey lift tower at the southeast corner, the north wing is of two storeys, and the carpark is two storeyed.</p>
     </section>
 
+    <img class="big-img" src="../assets/images/churchill-house-25.jpg">
+    
     <!-- Main building description-->
     <section class="wrapper">
         <h2>Main Building</h2>
@@ -52,11 +62,22 @@
     </section>
 
     <!-- North wing description-->
-    <section class="wrapper">
-        <h2>North Wing</h2>
-        <p>The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p>
+    <section class="imagesrow-foo">
+        <div class="wrapper-side-img">
+            <h2>North Wing</h2>
+            <p>The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p> 
+        </div>
+        <img class="wrapper-side-img" src="../assets/images/churchill-house-1.jpg">
     </section>
+    
+<!--TESTING FLEXBOX-->
+    
+<div class="flex-container">
+  <div>1</div>
+  <div><img src="../assets/images/churchill-house-1.jpg"></div>  
+</div>
 
+    
     <!-- Pool Area, Carpark and landscaping description-->
     <section class="wrapper">
         <h2>Pool Area, Carpark and Landscaping </h2>
