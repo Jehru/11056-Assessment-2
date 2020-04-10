@@ -151,6 +151,29 @@ a {
     opacity: 0.7;
 }
 
+#hero-image-hist {
+    height: 500px;
+    background-image:
+        url('../images/churchill-house-18.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-attachment: scroll;  
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#hero-image-arch {
+    height: 500px;
+    background-image:
+        url('../images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: top;
+    background-attachment: scroll;  
+    z-index: -1;
+    opacity: 0.5;
+}
 
 #hero-text-alt {
     position: absolute;
@@ -225,9 +248,17 @@ a {
     margin:0 auto;
 }
 
+/* MAKE SURE TO DELTETE THIS ONE*/
 .big-img {
     display: block;
     margin: 0 auto;
+    width: 50%;
+}
+
+.big-img-margin {
+    display: block;
+    margin: 0 auto 40px;
+    width: 50%;
 }
 
 .big-img-width {
@@ -236,11 +267,23 @@ a {
     width: 50%;
 }
 
+.big-img-figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.big-img-height {
+    display: block;
+    margin: 0 auto;
+    height: 800px;
+}
+
 /*-----------*/
 /* FOOTER */
 footer { 
     background-color: lightgrey;
-    padding: 100px;
+    padding: 80px;
     text-align: center;
 }
 
