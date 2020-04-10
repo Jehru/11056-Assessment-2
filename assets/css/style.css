@@ -149,45 +149,47 @@ a {
 /*----------------------------*/
 /*ALL OTHER PAGES HERO CONTENT*/
 
+/* One Issue that arose was that the banner images in the background-attachment: fixed was active on the image it caused the image to start at the top rather than the center. This is neccessary for the parrallax scrolling to work, so I had to have larger pixel heights to make sure the banner images were visible. I was unable to center the images with a fixed background attachment. */
+
 .filter-alt {
-    height: 500px;
+    height: 600px;
     background: black;
     overflow: hidden;
 }
 
 
 #hero-image-desc {
-    height: 500px;
+    height: 600px;
     background-image:
         url('../images/churchill-house-4.jpg');
     background-size: cover;
     overflow: hidden;
-    background-position: center;
-    background-attachment: scroll;  
+    background-attachment: fixed;  
+    background-position: bottom;
     z-index: -1;
     opacity: 0.7;
 }
 
 #hero-image-hist {
-    height: 500px;
+    height: 600px;
     background-image:
         url('../images/churchill-house-18.jpg');
     background-size: cover;
     overflow: hidden;
-    background-position: center;
-    background-attachment: scroll;  
+    background-attachment: fixed;  
+    background-position: bottom;
     z-index: -1;
     opacity: 0.7;
 }
 
 #hero-image-arch {
-    height: 500px;
+    height: 600px;
     background-image:
         url('../images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg');
     background-size: cover;
     overflow: hidden;
-    background-position: top;
-    background-attachment: scroll;  
+    background-attachment: fixed;  
+    background-position: center;
     z-index: -1;
     opacity: 0.5;
 }
