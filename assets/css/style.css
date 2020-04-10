@@ -206,7 +206,7 @@ a {
 
 .wrapper {
     width: 35%;
-    margin: 125px auto;
+    margin: 110px auto;
     line-height: 23px; 
 }
 
@@ -224,7 +224,7 @@ a {
 
 .flex-container {
     display: flex;
-    background-color: grey;
+    background-color: lightgrey;
     width: 70%;
     margin: 0 auto;
 }
