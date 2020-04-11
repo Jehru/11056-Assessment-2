@@ -76,8 +76,12 @@ a {
 
     #navigation li {
         display: inline-block;
-        margin: 30px;
+        margin: 30px 0 30px 0;
     }
+
+        #navigation li a{
+            padding: 20px;
+        }
 
 #logo {
     font-size: 35px;
@@ -103,7 +107,7 @@ a {
 
 /*------------------*/
 /* ACTIVE AND HOVER */
-#navigation li:hover {
+#navigation li a:hover {
     text-decoration: underline;
     background-color: lightblue;
 }
@@ -148,8 +152,6 @@ a {
 
 /*----------------------------*/
 /*ALL OTHER PAGES HERO CONTENT*/
-
-/* One Issue that arose was that the banner images in the background-attachment: fixed was active on the image it caused the image to start at the top rather than the center. This is neccessary for the parrallax scrolling to work, so I had to have larger pixel heights to make sure the banner images were visible. I was unable to center the images with a fixed background attachment. */
 
 .filter-alt {
     height: 600px;
