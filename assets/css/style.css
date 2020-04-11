@@ -52,7 +52,7 @@ h3 {
 }
 
 a {
-    color: deepskyblue;
+    color: #001cc2;
     text-decoration: underline;
 }
     a:hover {
@@ -102,7 +102,8 @@ a {
     }
 
 #current-page {
-    text-decoration: underline;    
+    text-decoration: underline;
+    background-color: lightgrey;
 }
 
 /*------------------*/
@@ -334,19 +335,20 @@ footer {
 
 footer p {
     width: 35%;
-    margin: 40px auto;
+    margin: 30px auto;
     line-height: 23px; 
 }
 
 footer ul li {
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     display: inline-block;
     background-color: #1c64c9;
-    padding: 14px 25px;
+    padding: 20px 0 20px 0;
 }
 
 footer ul li a {
     color: white;
+    padding: 20px;
 }
     footer ul li:hover {
         background-color: #6797db;
