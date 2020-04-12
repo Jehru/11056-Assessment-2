@@ -14,7 +14,7 @@
 /* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/*----------------*/
+/*-----------------------------------------*/
 /* BODY ELEMENTS */
 body {
     font-family: "Roboto", sans-serif;
@@ -59,7 +59,7 @@ a {
         text-decoration: underline;
     }
 
-/* ------------------ */
+/* -------------------------------------- */
 /* NAVIGATION */
 #navigation {
     background-color: white;
@@ -88,14 +88,15 @@ a {
     font-weight: bold;
     color: black;
     text-decoration: none;
+    margin-left: 10px;
 }
 
-.navelement {
+.nav-element {
     float: right;
     padding: 10px;
 }
 
-    .navelement li a{
+    .nav-element li a{
         font-size: 19px;
         color: black;
         text-decoration: none;
@@ -106,7 +107,7 @@ a {
     background-color: lightgrey;
 }
 
-/*------------------*/
+/*-----------------------------------*/
 /* ACTIVE AND HOVER */
 #navigation li a:hover {
     text-decoration: underline;
@@ -117,7 +118,7 @@ a {
     text-decoration: underline;
 }
 
-/*-------------*/
+/*------------------------------------*/
 /*HERO CONTENT (MAIN)*/
 .filter {
     height: 700px;
@@ -151,7 +152,7 @@ a {
     height: 100%;
 }
 
-/*----------------------------*/
+/*-------------------------------------*/
 /*ALL OTHER PAGES HERO CONTENT*/
 
 .filter-alt {
@@ -206,7 +207,7 @@ a {
 }
 
 
-/*----------------*/
+/*----------------------------------*/
 /* WRAPPER TEXT*/
 
 .wrapper {
@@ -230,17 +231,17 @@ a {
     width: 35%;
 }
 
-/*----------------*/
-/*IMAGE AND TEXT*/
+/*---------------------------------*/
+/* TEXT AND IMAGE SIDE BY SIDE CONTAINER*/
 
-.flex-container {
+.text-image-container {
     display: flex;
     background-color: lightgrey;
     width: 70%;
     margin: 0 auto;
 }
 
-.flex-container div {
+.text-image-container div {
     background-color: lightgray;
     margin: 10px;
     padding: 60px;
@@ -249,49 +250,42 @@ a {
     text-align: center;
 }
 
-.flex-container div p{
+.text-image-container div p{
     font-size: 17px;
     line-height: 23px;
 }
 
 
-.flex-container div img{
+.text-image-container div img{
     display: inline-block;
     vertical-align: middle;
     width: 100%;
 }
 
 
-/*---------------*/
+/*------------------------------*/
 /* IMAGES */
-.imagesrow {
+.image-row {
     display: flex;
     background-color: lightgrey;
     padding: 20px 0 20px 0;
 }
 
-.imagescolumn {
+.image-column {
     float: left;
     width: 35%;
     margin:0 auto;
 }
 
-/* MAKE SURE TO DELTETE THIS ONE*/
-.big-img {
+.big-img-horz {
     display: block;
     margin: 0 auto;
     width: 50%;
 }
 
-.big-img-margin {
+.big-img-horz-margin {
     display: block;
     margin: 0 auto 40px;
-    width: 50%;
-}
-
-.big-img-width {
-    display: block;
-    margin: 0 auto;
     width: 50%;
 }
 
@@ -301,22 +295,22 @@ a {
     text-align: center;
 }
 
-.big-img-height {
+.big-img-vert {
     display: block;
     margin: 0 auto;
     height: 800px;
 }
 
 
-/*------------------------------*/
+/*------------------------------------*/
 /* IMAGE CAROSEL */
-.slider {
+.carousel {
     display: flex;
     overflow-x: auto;
     margin: 20px 0 50px 0;
 }
 
-.slider-img {
+.carousel-img {
 /*    float: left;*/
     width: 40%;
     margin: 0 auto;
@@ -325,7 +319,7 @@ a {
     
 }
 
-/*-----------*/
+/*-------------------------------*/
 /* FOOTER */
 footer { 
     background-color: lightgrey;
@@ -353,5 +347,4 @@ footer ul li a {
     footer ul li:hover {
         background-color: #6797db;
     }
-
 
