@@ -53,11 +53,12 @@ h3 {
 
 a {
     color: #001cc2;
-    text-decoration: underline;
+    text-decoration: none;
 }
     a:hover {
         text-decoration: underline;
-    }
+    }  
+
 
 /* -------------------------------------- */
 /* NAVIGATION */
@@ -81,6 +82,12 @@ a {
 
         #navigation li a{
             padding: 20px;
+            
+            /* TESTING UNDERLINE HOVER*/
+            color: black;
+            text-decoration: none;
+            padding: 15px 20px;
+            position: relative;
         }
 
 #logo {
@@ -109,6 +116,7 @@ a {
 
 /*-----------------------------------*/
 /* ACTIVE AND HOVER */
+/*
 #navigation li a:hover {
     text-decoration: underline;
     background-color: lightblue;
@@ -117,6 +125,25 @@ a {
 #navigation li:active {
     text-decoration: underline;
 }
+*/
+
+/* TESTING NAVIGATION UNDERLINE EFFECT*/
+#navigation li a:after {    
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: grey;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+}
+
+#navigation li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+}
+
 
 /*------------------------------------*/
 /*HERO CONTENT (MAIN)*/
@@ -135,7 +162,7 @@ a {
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 #hero-text {
@@ -336,15 +363,36 @@ footer p {
 footer ul li {
     margin: 0 0 30px 0;
     display: inline-block;
-    background-color: #1c64c9;
+/*    background-color: #1c64c9;*/
     padding: 20px 0 20px 0;
 }
 
 footer ul li a {
     color: white;
     padding: 20px;
+/*    text-decoration: none;*/
 }
+/*
     footer ul li:hover {
         background-color: #6797db;
     }
+*/
 
+/*NOT FINISHED*/
+
+/* TESTING FOOTER UNDERLINE EFFECT*/
+footer ul li a:after {    
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: white;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+}
+
+footer ul li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+}
