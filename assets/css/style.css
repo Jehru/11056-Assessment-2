@@ -59,6 +59,16 @@ a {
         text-decoration: underline;
     }  
 
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+    q::before {
+    content: open-quote;
+    }
+    q::after {
+        content: close-quote;
+    }
 
 /* -------------------------------------- */
 /* NAVIGATION */
@@ -110,7 +120,6 @@ a {
     }
 
 #current-page {
-    text-decoration: underline;
     background-color: lightgrey;
 }
 
@@ -360,17 +369,17 @@ footer p {
     line-height: 23px; 
 }
 
-footer ul li {
+#footer-nav li {
     margin: 0 0 30px 0;
     display: inline-block;
-/*    background-color: #1c64c9;*/
+/*    background-color: white;*/
     padding: 20px 0 20px 0;
 }
 
-footer ul li a {
-    color: white;
+#footer-nav li a {
     padding: 20px;
-/*    text-decoration: none;*/
+    color: black;
+    text-decoration: none;
 }
 /*
     footer ul li:hover {
@@ -379,20 +388,19 @@ footer ul li a {
 */
 
 /*NOT FINISHED*/
-
 /* TESTING FOOTER UNDERLINE EFFECT*/
-footer ul li a:after {    
+#footer-nav li a:after {    
         bottom: 0;
         content: "";
-        height: 4px;
+        height: 6px;
         left: 50%;
         position: absolute;
-        background: white;
+        background: black;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
 }
 
-footer ul li a:hover:after { 
+#footer-nav li a:hover:after { 
         width: 100%; 
         left: 0; 
 }
