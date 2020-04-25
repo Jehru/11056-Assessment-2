@@ -411,3 +411,51 @@ footer ul li a:hover:after {
 /* !important -> ID -> Class -> General tag*/
 
 /* CSS MEDIA QUERIES */
+/*@ media screen and (min-width)*/
+
+
+/*Grids */
+
+/*
+footer {
+disply: grid;
+grid-template-columns: 40px 1fr 40px;
+}
+*/
+
+/*
+grid-column: 1/4; defines the starting and ending lines fo the grid
+
+grid-gap: 1 rem; defines spacing around your gird elemenets
+
+align-items: start; to stop elements from stretching out
+
+
+first-of-type selector. 
+
+nth-of-type(3) is another advanced selector
+*/
+
+
+
+/*
+Two column layout
+
+main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 2rem;
+margin: 2rem;
+}
+
+id {
+grid-row: 1/4;
+}
+
+*/
+
+/*
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+*/
