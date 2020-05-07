@@ -25,6 +25,7 @@ p {
     margin: 25px 0 25px 0;
 }
 
+/* Heading 1 is the hero text on the image at the top*/
 h1 {
     font-size: 90px;
     font-weight: bold;
@@ -32,6 +33,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Heading 2 are any section headings on each page */
 h2 {
     font-size: 30px; 
     font-weight: bold;
@@ -39,6 +41,7 @@ h2 {
     line-height: 30px;
 }
 
+/* Heading 3 is only used on the location of the site and image carousels */
 h3 {
     font-size: 22px;
     font-weight: bold;
@@ -46,11 +49,13 @@ h3 {
     line-height: 30px;
 }
 
+/* Creating the dot points for any lists */
 .wrapper ul {
     list-style-type: circle;
     padding-left: 18px;
 }
 
+/* Turn hyperlinks blue and make them underline when hovered */
 a {
     color: #001cc2;
     text-decoration: none;
@@ -59,6 +64,7 @@ a {
         text-decoration: underline;
     }  
 
+/* Give quotes the appropirate quotation marks */
 q {
   quotes: "“" "”" "‘" "’";
 }
@@ -72,6 +78,8 @@ q {
 
 /* -------------------------------------- */
 /* NAVIGATION */
+/* Create the navigatoin bar at the top, and make it fixed */
+/* Specifies our Javascript sticky header and gives it an animation */
 #navigation {
     background-color: white;
     list-style-type: none;
@@ -85,40 +93,40 @@ q {
     z-index: 1;
 }
 
+/* Make the logo appear inline and give it a margin */
     #navigation li {
         display: inline-block;
         margin: 30px 0 30px 0;
     }
 
+    /* Make underline hover only go  */
         #navigation li a{
-            padding: 20px;
-            
-            /* TESTING UNDERLINE HOVER*/
             color: black;
             text-decoration: none;
             padding: 15px 20px;
             position: relative;
         }
 
+/* Specify the font size and weight for the logo */
 #logo {
     font-size: 35px;
     font-weight: bold;
-    color: black;
-    text-decoration: none;
     margin-left: 10px;
 }
 
+/* Float the other navigation to the right and give it the same 
+   padding as the logo element */
 .nav-element {
     float: right;
     padding: 10px;
 }
 
+/* Specify the font size for the left navigation */
     .nav-element li a{
         font-size: 19px;
-        color: black;
-        text-decoration: none;
     }
 
+/* Tell the user which page they are on now using a lightgrey colour */
 #current-page {
     background-color: lightgrey;
 }
@@ -136,7 +144,9 @@ q {
 }
 */
 
-/* TESTING NAVIGATION UNDERLINE EFFECT*/
+/* NAVIGATION UNDERLINE EFFECT */
+/* Create a grey 4px line that appears which will appear when the user hovers */
+/* This appears below each of the navigational items */
 #navigation li a:after {    
         bottom: 0;
         content: "";
@@ -148,6 +158,7 @@ q {
         width: 0;
 }
 
+/* Code which tells the line to appear after the user hovers */
 #navigation li a:hover:after { 
         width: 100%; 
         left: 0; 
@@ -156,12 +167,15 @@ q {
 
 /*------------------------------------*/
 /*HERO CONTENT (MAIN)*/
+/* Creates a black filter which is applied in front of each hero
+image to give it more contrast with the white text */
 .filter {
     height: 700px;
     background: black;
     overflow: hidden;
 }
 
+/* Create a hero image this is the one for the main page */
 #hero-image {
     height: 700px;
     background-image:
@@ -174,6 +188,7 @@ q {
     opacity: 0.6;
 }
 
+/* This is the positioning of the hero text on the main page */
 #hero-text {
     position: absolute;
     top: 40%;
@@ -181,7 +196,13 @@ q {
     transform: translate(-50%, -50%);
 }
 
-/* Make the HTML cover image hidden as there is more control with a css background image*/
+/* Hides the image which was added through html. This is better for accessibility as people with a 
+screen reader could not read the image which was added through css */
+
+/*-------------------------------------------------------------------------*/
+/* NEED TO INCLUDE A HIDDEN IMAGE FOR ALL THE PAGES WHICH USE A HERO IMAGE */
+/*-------------------------------------------------------------------------*/
+
 #hero-img-hidden {
     visibility: hidden;
     width: 100%;
@@ -191,13 +212,14 @@ q {
 /*-------------------------------------*/
 /*ALL OTHER PAGES HERO CONTENT*/
 
+/* This is the same filter as mentioned above however it is for all the other pages */
 .filter-alt {
     height: 600px;
     background: black;
     overflow: hidden;
 }
 
-
+/* This is the hero image for the description page */
 #hero-image-desc {
     height: 600px;
     background-image:
@@ -210,6 +232,7 @@ q {
     opacity: 0.7;
 }
 
+/* This is the hero image for the history page */
 #hero-image-hist {
     height: 600px;
     background-image:
@@ -222,6 +245,7 @@ q {
     opacity: 0.7;
 }
 
+/* This is the hero image for the architecture page */
 #hero-image-arch {
     height: 600px;
     background-image:
@@ -234,6 +258,8 @@ q {
     opacity: 0.5;
 }
 
+/* This is the positioning of the hero text on the description, history and architecture 
+pages */
 #hero-text-alt {
     position: absolute;
     top: 30%;
@@ -246,18 +272,24 @@ q {
 /*----------------------------------*/
 /* WRAPPER TEXT*/
 
+/* The wrapper specifies the how the main content looks */
 .wrapper {
     width: 35%;
     margin: 110px auto;
     line-height: 23px; 
 }
 
+/* This alternate wrapper is used as the title on the image 
+carousel, the main purpose is to connect the slider to the heading text
+without creating a 110px distance between these two */
 .wrapper-no-padding {
     width: 35%;
     margin: 0 auto;
     line-height: 23px; 
 }
 
+/* Cant find why this is here */
+/*
 .wrapper-side-img {
     background-color: lightgrey;
     padding: 20px 0 20px 0;
@@ -266,10 +298,14 @@ q {
     margin: 0 auto;
     width: 35%;
 }
+*/
 
 /*---------------------------------*/
 /* TEXT AND IMAGE SIDE BY SIDE CONTAINER*/
+/* This is used in the description page to highlight the north wing */
+/* An image and text are used in the same box */
 
+/* Sets the main contaniner on the page */
 .text-image-container {
     display: flex;
     background-color: lightgrey;
@@ -277,8 +313,9 @@ q {
     margin: 0 auto;
 }
 
+/* As the box is made up of two divs, this styles these two sides by giving 
+them borders */
 .text-image-container div {
-    background-color: lightgray;
     margin: 10px;
     padding: 60px;
     font-size: 30px;
@@ -286,12 +323,13 @@ q {
     text-align: center;
 }
 
+/* Sets the line height and font size for the text side (left) */
 .text-image-container div p{
     font-size: 17px;
     line-height: 23px;
 }
 
-
+/* Sets the style for the image in the image side (right) */
 .text-image-container div img{
     display: inline-block;
     vertical-align: middle;
