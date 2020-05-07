@@ -7,6 +7,9 @@
           = top&bottom left&right
 */
 
+/* REMEMBER CSS SPECIFICITY 
+ !important -> ID -> Class -> General tag*/
+
 
 /* IMPORT RESET CSS */
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
@@ -339,6 +342,12 @@ them borders */
 
 /*------------------------------*/
 /* IMAGES */
+/* Most of the image styling is for individual items as different images needed
+different treatment to get them working on the site */
+
+/* The image row and column refer to when two images are placed side by side.
+This occurs on the home page and the architect page. They are placed in a flexbox
+so they remain responsive. */ 
 .image-row {
     display: flex;
     background-color: lightgrey;
@@ -351,24 +360,29 @@ them borders */
     margin:0 auto;
 }
 
+/* This class refers to horizontal images which (are mostly on the description page)*/
 .big-img-horz {
     display: block;
     margin: 0 auto;
     width: 50%;
 }
 
+/* This class refers to the horizontal image on the history page. It needed special treatment 
+as it was interfering with the footer */
 .big-img-horz-margin {
     display: block;
     margin: 0 auto 40px;
     width: 50%;
 }
 
+/* This is the styling for the only figure found on the architect page */
 .big-img-figure {
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 
+/* This class specifies the styling for the vertical image found on the history page */
 .big-img-vert {
     display: block;
     margin: 0 auto;
@@ -378,12 +392,15 @@ them borders */
 
 /*------------------------------------*/
 /* IMAGE CAROSEL */
+/* The styling for the image carousel at the bottom of the description page. 
+However this implementation is not the best as its not really visible */
+/* Main class for the whole carousel */
 .carousel {
     display: flex;
     overflow-x: auto;
     margin: 20px 0 50px 0;
 }
-
+/* Class for each individual image class in the carousel */
 .carousel-img {
 /*    float: left;*/
     width: 40%;
@@ -395,36 +412,44 @@ them borders */
 
 /*-------------------------------*/
 /* FOOTER */
+
+/* Creating the footer. I wanted the footer to stand out from the other content so I used
+a light grey colour scheme and a lot of padding */
 footer { 
     background-color: lightgrey;
     padding: 80px;
     text-align: center;
 }
 
+/* Copies a similar structure to the wrapper mentioned above. Makes sure to use similar line height */
 footer p {
     width: 35%;
     margin: 30px auto;
     line-height: 23px; 
 }
 
+/* Styling of the footer navigation */
 footer ul {
     list-style: none;
     margin-bottom: 60px;
 }
 
+/* Making the footer navigation display horizontally instead of vertically */
 footer ul li {
     display: inline;
 }
 
+/* This is the individual styling for each link in the footer navigation */
 footer ul li a {
+    display: inline-block;
     color: black;
     text-decoration: none;
-/*    display: inline-block;*/
     padding: 15px 20px;
     position: relative;
     background-color: grey;
 }
 
+/* Creating the underline element, similar to the top navigation */
 footer ul li a:after {    
         bottom: 0;
         content: "";
@@ -436,17 +461,17 @@ footer ul li a:after {
         width: 0;
 }
 
+/* Removing the previous hover underline link (as we want to replace it with the thicker lined one) */
 footer ul li a:hover{
     text-decoration: none;
 }
 
+/* Actually showing that underline when hovererd */
 footer ul li a:hover:after { 
         width: 100%; 
         left: 0; 
 }
 
-/* REMEMBER CSS SPECIFICITY */
-/* !important -> ID -> Class -> General tag*/
 
 /* CSS MEDIA QUERIES */
 /*@ media screen and (min-width)*/
