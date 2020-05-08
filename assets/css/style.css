@@ -489,3 +489,490 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 https://css-tricks.com/snippets/css/complete-guide-grid/
 
 */
+/* Reference for CSS stuff "cssreference.io" */
+
+
+/* CLASS = .  ID = # */
+/* MARGIN = top right bottom left
+          = top right&left bottom
+          = top&bottom left&right
+*/
+
+/* REMEMBER CSS SPECIFICITY 
+ !important -> ID -> Class -> General tag*/
+
+
+/* IMPORT RESET CSS */
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*-----------------------------------------*/
+/* BODY ELEMENTS */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px; 
+}
+
+p {
+    margin: 25px 0 25px 0;
+}
+
+/* Heading 1 is the hero text on the image at the top*/
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Heading 2 are any section headings on each page */
+h2 {
+    font-size: 30px; 
+    font-weight: bold;
+    padding: 0px 0px 20px;
+    line-height: 30px;
+}
+
+/* Heading 3 is only used on the location of the site and image carousels */
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0px;
+    line-height: 30px;
+}
+
+/* Creating the dot points for any lists */
+.wrapper ul {
+    list-style-type: circle;
+    padding-left: 18px;
+}
+
+/* Turn hyperlinks blue and make them underline when hovered */
+a {
+    color: #001cc2;
+    text-decoration: none;
+}
+    a:hover {
+        text-decoration: underline;
+    }  
+
+/* Give quotes the appropirate quotation marks */
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+    q::before {
+    content: open-quote;
+    }
+    q::after {
+        content: close-quote;
+    }
+
+/* -------------------------------------- */
+/* NAVIGATION */
+/* Create the navigatoin bar at the top, and make it fixed */
+/* Specifies our Javascript sticky header and gives it an animation */
+#navigation {
+    background-color: white;
+    list-style-type: none;
+    width: 100%;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+/* JS Sticky Header CSS*/
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1;
+}
+
+/* Make the logo appear inline and give it a margin */
+    #navigation li {
+        display: inline-block;
+        margin: 30px 0 30px 0;
+    }
+
+    /* Make underline hover only go  */
+        #navigation li a{
+            color: black;
+            text-decoration: none;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+/* Specify the font size and weight for the logo */
+#logo {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Float the other navigation to the right and give it the same 
+   padding as the logo element */
+.nav-element {
+    float: right;
+    padding: 10px;
+}
+
+/* Specify the font size for the left navigation */
+    .nav-element li a{
+        font-size: 19px;
+    }
+
+/* Tell the user which page they are on now using a lightgrey colour */
+#current-page {
+    background-color: lightgrey;
+}
+
+/*-----------------------------------*/
+/* NAVIGATION UNDERLINE EFFECT */
+
+/* Create a grey 4px line that appears which will appear when the user hovers */
+/* This appears below each of the navigational items after its been selected*/
+#navigation li a:after {    
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: grey;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+}
+
+/* Code which tells the line to appear after the user hovers */
+#navigation li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+}
+
+
+/*------------------------------------*/
+/*HERO CONTENT (MAIN)*/
+
+/* Hero image on the home page (the hero images also have parrallax scrolling) */
+#hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* This is the positioning of the hero text on the main page */
+#hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hides the image which was added through html. This is better for accessibility as people with a 
+screen reader could not read the image which was added through css */
+
+/*-------------------------------------------------------------------------*/
+/* NEED TO INCLUDE A HIDDEN IMAGE FOR ALL THE PAGES WHICH USE A HERO IMAGE */
+/*-------------------------------------------------------------------------*/
+
+#hero-img-hidden {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------------------*/
+/*ALL OTHER PAGES HERO CONTENT*/
+
+
+/* This is the hero image for the description page (the hero images also have parallax scrolling) */
+#hero-image-desc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/churchill-house-4.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+/* This is the hero image for the history page (the hero images also have parallax scrolling) */
+#hero-image-hist {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/churchill-house-18.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* This is the hero image for the architecture page (the hero images also have parallax scrolling) */
+#hero-image-arch {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* This is the positioning of the hero text on the description, history and architecture 
+pages */
+#hero-text-alt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+}
+
+
+/*----------------------------------*/
+/* WRAPPER TEXT*/
+
+/* The wrapper specifies the how the main content looks */
+.wrapper {
+    width: 35%;
+    margin: 110px auto;
+    line-height: 23px; 
+}
+
+/* This alternate wrapper is used as the title on the image 
+carousel, the main purpose is to connect the slider to the heading text
+without creating a 110px distance between these two */
+.wrapper-no-padding {
+    width: 35%;
+    margin: 0 auto;
+    line-height: 23px; 
+}
+
+/* Cant find why this is here */
+/*
+.wrapper-side-img {
+    background-color: lightgrey;
+    padding: 20px 0 20px 0;
+    line-height: 23px;
+    display: inline;
+    margin: 0 auto;
+    width: 35%;
+}
+*/
+
+/*---------------------------------*/
+/* TEXT AND IMAGE SIDE BY SIDE CONTAINER*/
+/* This is used in the description page to highlight the north wing */
+/* An image and text are used in the same box */
+
+/* Sets the main contaniner on the page */
+.text-image-container {
+    display: flex;
+    background-color: lightgrey;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* As the box is made up of two divs, this styles these two sides by giving 
+them borders */
+.text-image-container div {
+    margin: 10px;
+    padding: 60px;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+/* Sets the line height and font size for the text side (left) */
+.text-image-container div p{
+    font-size: 17px;
+    line-height: 23px;
+}
+
+/* Sets the style for the image in the image side (right) */
+.text-image-container div img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/*------------------------------*/
+/* IMAGES */
+/* Most of the image styling is for individual items as different images needed
+different treatment to get them working on the site */
+
+/* The image row and column refer to when two images are placed side by side.
+This occurs on the home page and the architect page. They are placed in a flexbox
+so they remain responsive. */ 
+.image-row {
+    display: flex;
+    background-color: lightgrey;
+    padding: 20px 0 20px 0;
+}
+
+.image-column {
+    float: left;
+    width: 35%;
+    margin:0 auto;
+}
+
+/* This class refers to horizontal images which (are mostly on the description page)*/
+.big-img-horz {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* This class refers to the horizontal image on the history page. It needed special treatment 
+as it was interfering with the footer */
+.big-img-horz-margin {
+    display: block;
+    margin: 0 auto 40px;
+    width: 50%;
+}
+
+/* This is the styling for the only figure found on the architect page */
+.big-img-figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* This class specifies the styling for the vertical image found on the history page */
+.big-img-vert {
+    display: block;
+    margin: 0 auto;
+    height: 800px;
+}
+
+
+/*------------------------------------*/
+/* IMAGE CAROSEL */
+/* The styling for the image carousel at the bottom of the description page. 
+However this implementation is not the best as its not really visible */
+/* Main class for the whole carousel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    margin: 20px 0 50px 0;
+}
+/* Class for each individual image class in the carousel */
+.carousel-img {
+/*    float: left;*/
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 20px 0 20px;
+    
+}
+
+/*-------------------------------*/
+/* FOOTER */
+
+/* Creating the footer. I wanted the footer to stand out from the other content so I used
+a light grey colour scheme and a lot of padding */
+footer { 
+    background-color: lightgrey;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Copies a similar structure to the wrapper mentioned above. Makes sure to use similar line height */
+footer p {
+    width: 35%;
+    margin: 30px auto;
+    line-height: 23px; 
+}
+
+/* Styling of the footer navigation */
+.footer-nav {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+/* Making the footer navigation display horizontally instead of vertically */
+.footer-nav li {
+    display: inline;
+}
+
+/* This is the individual styling for each link in the footer navigation */
+.footer-nav li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    position: relative;
+/*    background-color: grey;*/
+    border: 1px solid black;
+}
+
+/* Removing the previous hover underline link (as we want to replace it with the thicker lined one) 
+Also adding a background colour when the user hovers over it */
+.footer-nav li a:hover {
+    text-decoration: none;
+    background-color: grey;
+}
+
+
+/* Content was designed for a 1920 x 1080p screen 
+1-2 media queries below this size and maybe one above this size
+*/
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: blue;
+    }
+    .wrapper{
+        
+    }
+}
+
+
+
+/*Grids */
+
+/*
+footer {
+disply: grid;
+grid-template-columns: 40px 1fr 40px;
+}
+
+
+grid-column: 1/4; defines the starting and ending lines fo the grid
+
+grid-gap: 1 rem; defines spacing around your gird elemenets
+
+align-items: start; to stop elements from stretching out
+
+
+first-of-type selector. 
+
+nth-of-type(3) is another advanced selector
+
+
+Two column layout
+
+main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 2rem;
+margin: 2rem;
+}
+
+id {
+grid-row: 1/4;
+}
+
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+*/
+
