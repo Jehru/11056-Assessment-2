@@ -229,7 +229,7 @@ pages */
 
 /* The wrapper specifies the how the main content looks */
 .wrapper {
-    width: 35%;
+    width: 40%;
     margin: 110px auto;
     line-height: 23px; 
 }
@@ -238,22 +238,10 @@ pages */
 carousel, the main purpose is to connect the slider to the heading text
 without creating a 110px distance between these two */
 .wrapper-no-padding {
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
     line-height: 23px; 
 }
-
-/* Cant find why this is here */
-/*
-.wrapper-side-img {
-    background-color: lightgrey;
-    padding: 20px 0 20px 0;
-    line-height: 23px;
-    display: inline;
-    margin: 0 auto;
-    width: 35%;
-}
-*/
 
 /*---------------------------------*/
 /* TEXT AND IMAGE SIDE BY SIDE CONTAINER*/
@@ -300,16 +288,23 @@ different treatment to get them working on the site */
 /* The image row and column refer to when two images are placed side by side.
 This occurs on the home page and the architect page. They are placed in a flexbox
 so they remain responsive. */ 
+/*
 .image-row {
-    display: flex;
     background-color: lightgrey;
     padding: 20px 0 20px 0;
 }
+*/
+.image-row {
+    background-color: lightgrey;
+    padding: 100px;
+}
 
 .image-column {
-    float: left;
-    width: 35%;
-    margin:0 auto;
+    background-color: red;
+/*    float: left;*/
+    width: 45%;
+    margin-bottom: 0 auto 40px auto;
+    padding: 10px;
 }
 
 /* This class refers to horizontal images which (are mostly on the description page)*/
@@ -418,13 +413,13 @@ Also adding a background colour when the user hovers over it */
   }
     
     .wrapper {
-        width: 60%;
+        width: 80%;
         margin: 110px auto;
         line-height: 23px;
     }
     
-    #image-row {
-        
+    .image-column {
+        width: 90%;
     }
 }
 
@@ -435,7 +430,7 @@ Also adding a background colour when the user hovers over it */
     }
     .wrapper{
         width: 80%;
-        margin: 60px auto;
+        margin: 80px auto;
         line-height: 23px; 
     }
     footer p {
