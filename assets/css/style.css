@@ -135,21 +135,10 @@ q {
 }
 
 /*-----------------------------------*/
-/* ACTIVE AND HOVER */
-/*
-#navigation li a:hover {
-    text-decoration: underline;
-    background-color: lightblue;
-}
-
-#navigation li:active {
-    text-decoration: underline;
-}
-*/
-
 /* NAVIGATION UNDERLINE EFFECT */
+
 /* Create a grey 4px line that appears which will appear when the user hovers */
-/* This appears below each of the navigational items */
+/* This appears below each of the navigational items after its been selected*/
 #navigation li a:after {    
         bottom: 0;
         content: "";
@@ -170,25 +159,15 @@ q {
 
 /*------------------------------------*/
 /*HERO CONTENT (MAIN)*/
-/* Creates a black filter which is applied in front of each hero
-image to give it more contrast with the white text */
-.filter {
-    height: 700px;
-    background: black;
-    overflow: hidden;
-}
 
-/* Create a hero image this is the one for the main page */
+/* Hero image on the home page (the hero images also have parrallax scrolling) */
 #hero-image {
-    height: 700px;
-    background-image:
-        url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
+    height: 750px;
     background-attachment: fixed;
-    z-index: -1;
-    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* This is the positioning of the hero text on the main page */
@@ -215,57 +194,43 @@ screen reader could not read the image which was added through css */
 /*-------------------------------------*/
 /*ALL OTHER PAGES HERO CONTENT*/
 
-/* This is the same filter as mentioned above however it is for all the other pages */
-.filter-alt {
-    height: 600px;
-    background: black;
-    overflow: hidden;
-}
 
-/* This is the hero image for the description page */
+/* This is the hero image for the description page (the hero images also have parallax scrolling) */
 #hero-image-desc {
-    height: 600px;
-    background-image:
-        url('../images/churchill-house-4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/churchill-house-4.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    background-attachment: fixed;  
     background-position: bottom;
-    z-index: -1;
-    opacity: 0.7;
+    
 }
 
-/* This is the hero image for the history page */
+/* This is the hero image for the history page (the hero images also have parallax scrolling) */
 #hero-image-hist {
-    height: 600px;
-    background-image:
-        url('../images/churchill-house-18.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/churchill-house-18.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    background-attachment: fixed;  
     background-position: bottom;
-    z-index: -1;
-    opacity: 0.7;
 }
 
-/* This is the hero image for the architecture page */
+/* This is the hero image for the architecture page (the hero images also have parallax scrolling) */
 #hero-image-arch {
-    height: 600px;
-    background-image:
-        url('../images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg');
+    height: 750px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    background-attachment: fixed;  
     background-position: center;
-    z-index: -1;
-    opacity: 0.5;
 }
 
 /* This is the positioning of the hero text on the description, history and architecture 
 pages */
 #hero-text-alt {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 70px;
@@ -429,54 +394,56 @@ footer p {
 }
 
 /* Styling of the footer navigation */
-footer ul {
+.footer-nav {
     list-style: none;
     margin-bottom: 60px;
 }
 
 /* Making the footer navigation display horizontally instead of vertically */
-footer ul li {
+.footer-nav li {
     display: inline;
 }
 
 /* This is the individual styling for each link in the footer navigation */
-footer ul li a {
+.footer-nav li a {
     display: inline-block;
     color: black;
     text-decoration: none;
     padding: 15px 20px;
     position: relative;
+/*    background-color: grey;*/
+    border: 1px solid black;
+}
+
+/* Removing the previous hover underline link (as we want to replace it with the thicker lined one) 
+Also adding a background colour when the user hovers over it */
+.footer-nav li a:hover {
+    text-decoration: none;
     background-color: grey;
 }
 
-/* Creating the underline element, similar to the top navigation */
-footer ul li a:after {    
-        bottom: 0;
-        content: "";
-        height: 3px;
-        left: 50%;
-        position: absolute;
-        background: aqua;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-}
-
-/* Removing the previous hover underline link (as we want to replace it with the thicker lined one) */
-footer ul li a:hover{
-    text-decoration: none;
-}
-
-/* Actually showing that underline when hovererd */
-footer ul li a:hover:after { 
-        width: 100%; 
-        left: 0; 
-}
-
-
 /* CSS MEDIA QUERIES */
-/*@ media screen and (min-width)*/
+/* Content was designed for a 1920 x 1080p screen 
+1-2 media queries below this size and maybe one above this size
+*/
 
 
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: blue;
+  }
+}
+
+
+/* Teacher told us to use grids however due to time contstraints i cannot rebuild the entire website
+which was fully built in < two weeks.  
+*/
 /*Grids */
 
 /*
