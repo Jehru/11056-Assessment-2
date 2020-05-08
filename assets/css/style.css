@@ -302,9 +302,8 @@ so they remain responsive. */
 .image-column {
     background-color: red;
 /*    float: left;*/
-    width: 45%;
-    margin-bottom: 0 auto 40px auto;
-    padding: 10px;
+    width: 49%;
+    padding: 5px;
 }
 
 /* This class refers to horizontal images which (are mostly on the description page)*/
