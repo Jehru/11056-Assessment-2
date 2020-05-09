@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--Title of Page, and links to CSS and Javascript-->
         <title>Churchill House - Responsive Website </title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -8,22 +9,23 @@
     </head>
     
 <body>
-<!-- Header is mostly navigation related -->
-<!-- I used excess selectors so that I could target each individual part to style it in CSS -->
-<!-- Logo goes on right side and navigation goes on left side -->
+<!-- Header is completely navigation related -->
+<!-- I used excess selectors so that I could target each individual part to style it in CSS
+Logo goes on right side and navigation goes on left side -->
+<!-- Code needs the ID navigation for Javascript to properly work-->
+<!-- While logo is a link it doesnt have the same underline affect as the rest of the navigation bar -->
 <header>
-    <nav>
-        <ul id="navigation">
-            <li><a id="logo" href="">Churchill House</a></li>
-            <div class="nav-element">
+    <nav id="navigation">
+        <a id="logo" href="">Churchill House</a>
+        <ul class="nav-element">
                 <li><a id="current-page" href="">Home</a></li>
-                <li><a href="pages/description.html">The  Description</a></li>
+                <li><a href="pages/description.html">The Description</a></li>
                 <li><a href="pages/history.html">The History</a></li>
                 <li><a href="pages/architect.html">The Architect</a></li>
-            </div>
         </ul>
     </nav> 
-    <!-- Top of page -->
+    
+    <!-- Top of page. This works with clickable link below which brings the user to the top of the page  -->
     <a id="top"></a>
 </header>
     
@@ -31,10 +33,10 @@
 <!-- Hero Content -->
 <!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers -->
     <div id="hero-image"> 
-        <img id="hero-img-hidden" src="assets/images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg" alt="Hero image">
+        <img id="hero-img-hidden" src="assets/images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg" alt="Hero Image of Churchill House">
     </div>
     
-
+<!-- Main white churchill house text on top of image -->
 <h1 id="hero-text">Churchill House</h1>
 
 
@@ -50,11 +52,10 @@
     </section>
 
 <!-- Images in a flexbox. Images appear side by side -->
-    
-    <section class="image-row">
-        <img class="image-column" src="assets/images/churchill-house-28.jpg" alt="Churchill House floorplan">
-        <img class="image-column" src="assets/images/churchill-house-31.jpg" alt="Churchill House floorplan">
-    </section>
+    <div class="image-row">
+        <img class="image-column" src="assets/images/churchill-house-28.jpg" alt="Image of Churchill House's structural fins">
+        <img class="image-column" src="assets/images/churchill-house-31.jpg" alt="Image of Churchill House's courtyard">
+    </div>
 
 <!-- Statement of Significance section -->
     <section class="wrapper">
@@ -79,7 +80,7 @@
 <!-- Includes the coordinates of the site -->
     <section class="wrapper">
         <h3>Location of the Site:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.7622649349237!2d149.13048610146126!3d-35.2621697500453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1652997c33f99f%3A0x24a78bb62971e4b2!2sChurchill%20House%2C%20218%20Northbourne%20Ave%2C%20Braddon%20ACT%202612!5e0!3m2!1sen!2sau!4v1586491074143!5m2!1sen!2sau" height="500" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.7622649349237!2d149.13048610146126!3d-35.2621697500453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1652997c33f99f%3A0x24a78bb62971e4b2!2sChurchill%20House%2C%20218%20Northbourne%20Ave%2C%20Braddon%20ACT%202612!5e0!3m2!1sen!2sau!4v1586491074143!5m2!1sen!2sau" height="500" aria-hidden="false" aria-label="Google Map location of Churchill House" tabindex="0"></iframe>
     </section>
     
 </main>
@@ -94,12 +95,32 @@
             <li><a href="pages/history.html">History</a></li>
             <li><a href="pages/architect.html">Architect</a></li>
         </ul>
-    <a href="#top">Top of page &#9650;</a>
+    <a href="#top" aria-label="Link to top of page">Top of page &#9650;</a>
 </footer>
             
 </body>
-<!-- Week 4 nav, body tags, image tags etc (Basic HTML markup)-->
-<!-- Week 5 Meta and lang tags. Semantic HTML section, main, header etc -->
-<!-- Week 6 CSS, Linking CSS, basic CSS-->
-<!-- Week 7 Online Class. -->
 </html>
+
+
+<!--RILEY HAMBURGER-->
+
+<!--
+<a href="#main-menu" id="main-menu-toggle" class="menu-toggle">
+<span class="bars" aria-hidden="true">
+    <svg xlms="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4z0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+    </span>
+</a>
+
+<nav id="main-menu" class="main-menu" aria-label="main menu">
+<a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="close menu">
+    <span class="close" aria-label="true"></span>
+</a>
+<ul>
+    <li><a href="#house">Menu 1</a></li>
+    <li><a href="#house">Menu 2</a></li>
+    <li><a href="#house">Menu 3</a></li>
+</ul>
+
+    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+-->
+

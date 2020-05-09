@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--Title of Page, and links to CSS and Javascript-->
         <title>Churchill House - Responsive Website </title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
@@ -8,34 +9,33 @@
     </head>
 <body> 
 <header>
-    <nav>
-        <ul id="navigation">
-            <li><a id="logo" href="../index.html">Churchill House</a></li>
-            <div class="nav-element">
+<!-- Header is completely navigation related -->
+<!-- I used excess selectors so that I could target each individual part to style it in CSS
+Logo goes on right side and navigation goes on left side -->
+    <nav id="navigation">
+        <a id="logo" href="../index.html">Churchill House</a>
+        <ul class='nav-element'>
                 <li><a href="../index.html">Home</a></li>
                 <li><a id="current-page" href="">The Description</a></li>
                 <li><a href="history.html">The History</a></li>
                 <li><a href="architect.html">The Architect</a></li>
-            </div>
         </ul>
     </nav>    
     
-    <!-- Top of Page-->
+    <!-- Top of page. This works with clickable link below which brings the user to the top of the page  -->
     <a id="top"></a>
-    
 </header>
     
 <main>
-    
-<!--Hero Content-->
-<!--I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers-->   
+<!-- Hero Content -->
+<!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers --> 
     <div id="hero-image-desc">
-        <img id="hero-img-hidden" src="../assets/images/churchill-house-4.jpg">
+        <img id="hero-img-hidden" src="../assets/images/churchill-house-4.jpg" alt="Hero image of Architectural drawings of Churchill House">
     </div>
     
 <h1 id="hero-text-alt">Description</h1>
 
-    <!--Brief intro-->
+    <!-- Brief intro -->
     <section class="wrapper">
         <h2>Intro</h2>
         <p>Churchill House was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete.</p>
@@ -43,7 +43,7 @@
         <p>The complex comprises a number of components: the main building with its east and south wings, the separate north wing or pavilion, the pool and the rear carpark. The main building forms an L shape in plan, and with the north wing it encloses on three sides a courtyard in which the pool is located. The main building is of three storeys with a four storey lift tower at the southeast corner, the north wing is of two storeys, and the carpark is two storeyed.</p>
     </section>
 
-    <img class="big-img-horz" src="../assets/images/churchill-house-19.jpg">
+    <img class="big-img-horz" src="../assets/images/churchill-house-19.jpg" alt="Architectural floorplan of Churchill House">
     
     <!-- Main building description-->
     <section class="wrapper">
@@ -59,17 +59,16 @@
         <p>The roof of the main building is set behind a parapet and appears to be graded concrete with a membrane coating.</p>
     </section>
 
-    <!-- North wing description-->
-    
+<!-- North wing description-->
 <div class="text-image-container">
   <div> 
     <h2>North Wing</h2>
     <p>The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p> </div>
-  <div><img src="../assets/images/churchill-house-12.jpg"></div>  
+  <div><img src="../assets/images/churchill-house-12.jpg" alt="Inverted image of building"></div>  
 </div>
     
     
-    <!-- Pool Area, Carpark and landscaping description-->
+<!-- Pool Area, Carpark and landscaping description-->
     <section class="wrapper">
         <h2>Pool Area, Carpark and Landscaping </h2>
         <p>The pool area is lower than the surrounding site, and being mostly enclosed by the wings, has the quality of a sunken courtyard. The pool area is reached by a large flight of concrete steps from the west, and features a pond which borders a large, raised central island which is reached from one side by a set of bridging steps. The island has concrete paving, garden beds and silver birch trees, and is the location for a large fibreglass statue of Sir Winston Churchill.</p>
@@ -79,9 +78,9 @@
         <p>Churchill House has a number of landscape/garden areas. At the front (west) of the building is an open lawn area and either side are mixed native/exotic plantings. The pool area contains numerous trees and shrubs, again of mixed native/exotic species. A small courtyard to the southeast of the main building features bamboo.</p>
     </section>
 
-    <img class="big-img-horz" src="../assets/images/churchill-house-36.jpg">
+    <img class="big-img-horz" src="../assets/images/churchill-house-36.jpg" alt="Corner of Churchill House">
     
-    <!-- Stylistic analysis section-->
+<!-- Stylistic analysis section-->
     <section class="wrapper">
         <h2>Stylistic Analysis</h2>
         <p>Churchill House displays several key features of the Late Twentieth Century Brutalist style as follows.</p>
@@ -116,13 +115,13 @@
     <section class="wrapper-no-padding">
         <h3>Scroll through some images here:</h3>
     </section>
-    
+<!-- Image Carousel -->
 <div class="carousel">
-    <img class="carousel-img" src="../assets/images/churchill-house-10.jpg">
-    <img class="carousel-img" src="../assets/images/churchill-house-28.jpg">
-    <img class="carousel-img" src="../assets/images/churchill-house-34.jpg">
-    <img class="carousel-img" src="../assets/images/churchill-house-39.jpg">
-    <img class="carousel-img" src="../assets/images/churchill-house-46.jpg">
+    <img class="carousel-img" src="../assets/images/churchill-house-10.jpg" alt="Section cut of Churchill House sketch">
+    <img class="carousel-img" src="../assets/images/churchill-house-28.jpg" alt="Angled image of sidefins">
+    <img class="carousel-img" src="../assets/images/churchill-house-34.jpg" alt="Wall of Churchill House">
+    <img class="carousel-img" src="../assets/images/churchill-house-39.jpg" alt="Image showcasing the structral fins">
+    <img class="carousel-img" src="../assets/images/churchill-house-46.jpg" alt="Image from carpark showing the L-shaped corner">
 </div>
     
 </main>

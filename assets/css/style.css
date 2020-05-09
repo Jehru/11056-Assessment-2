@@ -105,9 +105,13 @@ iframe {
 
 /* Specify the font size and weight for the logo */
 #logo {
-    font-size: 35px;
+    font-size: 40px;
+    display: inline-block;
     font-weight: bold;
-    margin-left: 10px;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
 }
 
 /* Float the other navigation to the right and give it the same 
@@ -406,9 +410,11 @@ Also adding a background colour when the user hovers over it */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1100px) {
-  body {
-    background-color: pink;
-  }
+    body {
+        background-color: pink;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px; 
+    }
     
     .wrapper {
         width: 80%;
@@ -417,7 +423,7 @@ Also adding a background colour when the user hovers over it */
     }
     
     .image-column {
-        width: 90%;
+        width: 100%;
     }
     
     footer p {
@@ -442,12 +448,21 @@ Also adding a background colour when the user hovers over it */
         margin: 0 auto;
         height: 700px;
     }
+    
+    .big-img-figure img{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+    
 }
 
 @media screen and (max-width: 700px) {
     body {
         background-color: blue;
-/*        font-size: 17px;*/
+        font-family: "Roboto", sans-serif;
+        font-size: 17px; 
     }
     .wrapper{
         width: 80%;
