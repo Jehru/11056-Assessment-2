@@ -507,6 +507,11 @@ Also adding a background colour when the user hovers over it */
         text-align: center;
     }
     
+    .img-column {
+        width: 99.8%;
+        background: red;
+    }
+    
     footer {
         font-size: 17px;
     }
