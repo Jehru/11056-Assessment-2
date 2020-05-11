@@ -459,7 +459,7 @@ Also adding a background colour when the user hovers over it */
     body {
         background-color: pink;
         font-family: "Roboto", sans-serif;
-        font-size: 17px; 
+/*        font-size: 17px; */
     }
     
     .wrapper {
