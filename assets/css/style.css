@@ -468,9 +468,13 @@ Also adding a background colour when the user hovers over it */
         line-height: 23px;
     }
     
-    .image-column {
-        width: 100%;
+    #hero-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+    
     
     footer p {
         width: 80%;
@@ -501,7 +505,6 @@ Also adding a background colour when the user hovers over it */
         width: 90%;
         text-align: center;
     }
-    
     
     /*-------------------------*/
     /*------ MOBILE MENU ------*/
@@ -671,5 +674,13 @@ Also adding a background colour when the user hovers over it */
         margin: 0 auto;
         height: 500px;
     }
+    
+    #hero-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+/*        transform: translate(-50%, -50%);*/
+    }
+    
     
 }
