@@ -1,11 +1,19 @@
+/*-------------------------*/
+/*--------- IMPORTS -------*/
+/*-------------------------*/
+
 /* IMPORT RESET CSS */
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 
 /* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/*-----------------------------------------*/
-/* BODY ELEMENTS */
+
+
+/*-------------------------*/
+/*---------- BODY ---------*/
+/*-------------------------*/
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 17px; 
@@ -72,8 +80,11 @@ iframe {
     height: 500px;
 }
 
-/* -------------------------------------- */
-/* NAVIGATION */
+
+/*-------------------------*/
+/*------- NAVIGATION ------*/
+/*-------------------------*/
+
 /* Create the navigatoin bar at the top, and make it fixed */
 /* Specifies our Javascript sticky header and gives it an animation */
 #navigation {
@@ -131,8 +142,10 @@ iframe {
     background-color: lightgrey;
 }
 
-/*-----------------------------------*/
+
+/*-----------------------------*/
 /* NAVIGATION UNDERLINE EFFECT */
+/*-----------------------------*/
 
 /* Create a grey 4px line that appears which will appear when the user hovers */
 /* This appears below each of the navigational items after its been selected*/
@@ -154,8 +167,9 @@ iframe {
 }
 
 
-/*------------------------------------*/
-/*HERO CONTENT (MAIN)*/
+/*-------------------------*/
+/*----- HOME PAGE HERO ----*/
+/*-------------------------*/
 
 /* Hero image on the home page (the hero images also have parrallax scrolling) */
 #hero-image {
@@ -178,6 +192,7 @@ iframe {
 /* Hides the image which was added through html. This is better for accessibility as people with a 
 screen reader could not read the image which was added through css */
 
+
 /*-------------------------------------------------------------------------*/
 /* NEED TO INCLUDE A HIDDEN IMAGE FOR ALL THE PAGES WHICH USE A HERO IMAGE */
 /*-------------------------------------------------------------------------*/
@@ -188,9 +203,10 @@ screen reader could not read the image which was added through css */
     height: 100%;
 }
 
-/*-------------------------------------*/
-/*ALL OTHER PAGES HERO CONTENT*/
 
+/*-------------------------*/
+/* OTHER PAGE HERO CONTENT */
+/*-------------------------*/
 
 /* This is the hero image for the description page (the hero images also have parallax scrolling) */
 #hero-image-desc {
@@ -234,8 +250,9 @@ pages */
 }
 
 
-/*----------------------------------*/
-/* WRAPPER TEXT*/
+/*-------------------------*/
+/*----- WRAPPER TEXT ------*/
+/*-------------------------*/
 
 /* The wrapper specifies the how the main content looks */
 .wrapper {
@@ -253,8 +270,11 @@ without creating a 110px distance between these two */
     line-height: 23px; 
 }
 
-/*---------------------------------*/
-/* TEXT AND IMAGE SIDE BY SIDE CONTAINER*/
+
+/*---------------------------------------*/
+/* TEXT AND IMAGE SIDE BY SIDE CONTAINER */
+/*---------------------------------------*/
+
 /* This is used in the description page to highlight the north wing */
 /* An image and text are used in the same box */
 
@@ -290,8 +310,10 @@ them borders */
 }
 
 
-/*------------------------------*/
-/* IMAGES */
+/*-------------------------*/
+/*-------- IMAGES ---------*/
+/*-------------------------*/
+
 /* Most of the image styling is for individual items as different images needed
 different treatment to get them working on the site */
 
@@ -339,9 +361,10 @@ as it was interfering with the footer */
     height: 800px;
 }
 
+/*-------------------------*/
+/*------ IMAGE CAROSEL ----*/
+/*-------------------------*/
 
-/*------------------------------------*/
-/* IMAGE CAROSEL */
 /* The styling for the image carousel at the bottom of the description page. 
 However this implementation is not the best as its not really visible */
 /* Main class for the whole carousel */
@@ -360,8 +383,10 @@ However this implementation is not the best as its not really visible */
     
 }
 
-/*-------------------------------*/
-/* FOOTER */
+
+/*-------------------------*/
+/*--------- FOOTER --------*/
+/*-------------------------*/
 
 /* Creating the footer. I wanted the footer to stand out from the other content so I used
 a light grey colour scheme and a lot of padding */
@@ -408,7 +433,28 @@ Also adding a background colour when the user hovers over it */
 }
 
 
-/* MEDIA QUERIES */
+/*-------------------------*/
+/*----- MEDIA QUERIES -----*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*-- MEDIA QUERY > 1101px -*/
+/*-------------------------*/
+
+@media screen and (min-width: 1101px) {
+
+    .mobile-menu {
+        display:none;
+    }
+    
+}
+
+
+/*-------------------------*/
+/*-- MEDIA QUERY < 1100px -*/
+/*-------------------------*/
+
+/* This was identified as a breakpoint*/
 @media screen and (max-width: 1100px) {
     body {
         background-color: pink;
@@ -456,7 +502,153 @@ Also adding a background colour when the user hovers over it */
         text-align: center;
     }
     
+    
+    /*-------------------------*/
+    /*------ MOBILE MENU ------*/
+    /*-------------------------*/
+
+    /* Remove the desktop menu */
+    .nav-element {
+        display:none;
+    }
+    
+    /* Menu Wrap is the main wrapping container for the whole mobile menu. This makes sure the mobile menu appears above the rest of the content */
+    .menu-wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    /* Toggler is the invisible checkbox which sees if the menu has been selected. If it has been selected the mobile menu will appear*/
+    .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+        margin: 0px;
+    }
+    
+    /* Hamburger is the class for the hamburger icon */
+    .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        background: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #ffffff;
+    }
+    
+    
+    /* This is the class for the x icon to dismiss the menu once you open it */
+    .hamburger-exit{
+        display: none;
+    }
+    
+    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The hamburger icon therefore becomes invisible. */
+    .toggler:checked ~ .hamburger {
+        visibility: hidden;
+    }
+    
+    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The X icon therefore appears in the spot where the hamburger menu was. */
+    .toggler:checked ~ .hamburger-exit {
+        display: flex;    
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        fill: #ffffff;
+    }
+    
+    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The mobile navigation links therefore becomes visibile to the user */
+    .toggler:checked ~ .menu {
+        visibility: visible;
+    }
+
+    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The overlay appears with a 0.75s transition and a transform scale of 1 */
+    .toggler:checked ~ .menu div {
+        transform: scale(1);
+        transition-duration: 0.75s;
+    }
+    
+    /* This makes the menu visible and gives it a transition so that it appears after the grey overlay transition */
+    .toggler:checked ~ .menu div div {
+        opacity: 1;
+        transition:  opacity 0.4s ease 0.4s;
+    }
+
+    /* This sets the position of the grey overlay menu. It is of course invisible until the user clicks the checkbox*/
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* The overlay is the colour and the shape which sits behind the menu text. The circle shape helps to give a rounded animation, like its popping out from a circle*/
+    .overlay {
+        background: grey;
+        border-radius: 50%;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+    
+    /* Sets the text alignment of the content and the maximum width/height of the text. */
+    .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    /* Main styling for the list items*/
+    .mobile-menu li {
+        list-style: none;
+        color: #fff;
+        font-size: 19px;
+        padding: 1rem;
+    }
+    
+    /* Styling for the link tags tags*/
+    .mobile-menu > li > a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.4s ease;
+    }
+    
 }
+
+/*-------------------------*/
+/*-- MEDIA QUERY < 700px --*/
+/*-------------------------*/
 
 @media screen and (max-width: 700px) {
     body {
