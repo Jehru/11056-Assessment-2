@@ -507,9 +507,8 @@ Also adding a background colour when the user hovers over it */
         text-align: center;
     }
     
-    .img-column {
-        width: 99.8%;
-        background: red;
+    .image-column {
+        width: 100%;
     }
     
     footer {
@@ -666,7 +665,7 @@ Also adding a background colour when the user hovers over it */
         box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         /* JS Sticky Header CSS*/
-        position: relative;
+        position: absolute;
         top: 0 !important;
         transition: top 0.3s;
         z-index: 1;
