@@ -6,7 +6,7 @@ var prevScrollpos = window.pageYOffset;
 element downwards showing it to the user
 The whole script moves the navigation off the page (-130px) when the user scrolls down
 */
-window.onscroll = function() {
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navigation").style.top = "0";

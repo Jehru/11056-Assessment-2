@@ -449,6 +449,42 @@ Also adding a background colour when the user hovers over it */
     
 }
 
+/*-------------------------*/
+/*-- MEDIA QUERY < 700px --*/
+/*-------------------------*/
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: blue;
+        font-family: "Roboto", sans-serif;
+        font-size: 17px; 
+    }
+    .wrapper{
+        width: 80%;
+        margin: 80px auto;
+        line-height: 23px; 
+    }
+    footer p {
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .big-img-vert {
+        display: block;
+        margin: 0 auto;
+        height: 500px;
+    }
+    
+    #hero-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+/*        transform: translate(-50%, -50%);*/
+    }
+    
+    
+}
+
 
 /*-------------------------*/
 /*-- MEDIA QUERY < 1100px -*/
@@ -468,17 +504,16 @@ Also adding a background colour when the user hovers over it */
         line-height: 23px;
     }
     
+    footer p {
+        width: 80%;
+        margin: 30px auto;
+    }
+    
     #hero-text {
         position: absolute;
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    
-    
-    footer p {
-        width: 80%;
-        margin: 30px auto;
     }
     
     .big-img-horz {
@@ -636,8 +671,8 @@ Also adding a background colour when the user hovers over it */
     .mobile-menu li {
         list-style: none;
         color: #fff;
-        font-size: 19px;
-        padding: 1rem;
+        font-size: 45px;
+        padding: 3rem;
     }
     
     /* Styling for the link tags tags*/
@@ -649,38 +684,3 @@ Also adding a background colour when the user hovers over it */
     
 }
 
-/*-------------------------*/
-/*-- MEDIA QUERY < 700px --*/
-/*-------------------------*/
-
-@media screen and (max-width: 700px) {
-    body {
-        background-color: blue;
-        font-family: "Roboto", sans-serif;
-        font-size: 17px; 
-    }
-    .wrapper{
-        width: 80%;
-        margin: 80px auto;
-        line-height: 23px; 
-    }
-    footer p {
-        width: 80%;
-        margin: 30px auto;
-    }
-    
-    .big-img-vert {
-        display: block;
-        margin: 0 auto;
-        height: 500px;
-    }
-    
-    #hero-text {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-/*        transform: translate(-50%, -50%);*/
-    }
-    
-    
-}
