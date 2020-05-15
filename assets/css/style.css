@@ -467,7 +467,7 @@ Also adding a background colour when the user hovers over it */
     .wrapper {
         width: 70%;
         margin: 100px auto;
-        line-height: 23px;
+        line-height: 30px;
     }
 
     footer {
@@ -495,6 +495,7 @@ Also adding a background colour when the user hovers over it */
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    
     
     .big-img-horz {
         display: block;
