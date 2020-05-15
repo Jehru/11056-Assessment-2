@@ -14,16 +14,18 @@
 /*---------- BODY ---------*/
 /*-------------------------*/
 
+/* Sets the default body font to Roboto, if Roboto is not found than normal san-serif typeface. Make the font size 17px */
 body {
     font-family: "Roboto", sans-serif;
     font-size: 17px; 
 }
 
+/* Sets a 25px margin between each paragraph */
 p {
     margin: 25px 0;
 }
 
-/* Heading 1 is the hero text on the image at the top*/
+/* Heading 1 is the white hero text on the image at the top. This changes the weight to bold and full uppercase */
 h1 {
     font-size: 90px;
     font-weight: bold;
@@ -31,7 +33,7 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Heading 2 are any section headings on each page */
+/* Heading 2 are any section headings on each page. These are heavier weighted and are slightly bigger than the normal text */
 h2 {
     font-size: 30px; 
     font-weight: bold;
@@ -39,7 +41,7 @@ h2 {
     line-height: 30px;
 }
 
-/* Heading 3 is only used on the location of the site and image carousels */
+/* Heading 3 is only used on the location of the site and image carousels. These are only slightly different to the body text. Main difference is they h3 is in bold */
 h3 {
     font-size: 22px;
     font-weight: bold;
@@ -47,13 +49,13 @@ h3 {
     line-height: 30px;
 }
 
-/* Creating the dot points for any lists */
+/* Styling for the dot points. Indent them slightly and give them a cirlce bullet point */
 .wrapper ul {
     list-style-type: circle;
     padding-left: 18px;
 }
 
-/* Turn hyperlinks blue and make them underline when hovered */
+/* Make hyperlinks blue and make them underline when hovered */
 a {
     color: #001cc2;
     text-decoration: none;
@@ -62,7 +64,7 @@ a {
         text-decoration: underline;
     }  
 
-/* Give quotes the appropirate quotation marks */
+/* Give the quotes the appropirate double quotation  marks */
 q {
   quotes: "“" "”" "‘" "’";
 }
@@ -74,7 +76,7 @@ q {
         content: close-quote;
     }
 
-/* Make the map on the main page the correct size*/
+/* Style the sizing of the Google map on the main page. Make the width and height fit in with the rest of the content*/
 iframe {
     width: 100%;
     height: 500px;
@@ -85,8 +87,9 @@ iframe {
 /*------- NAVIGATION ------*/
 /*-------------------------*/
 
-/* Create the navigatoin bar at the top, and make it fixed */
-/* Specifies our Javascript sticky header and gives it an animation */
+/* Create a fixed navigation bar at the top*/
+/* Make the background white, remove any list styling, make the navigation full width */
+/* Also give the navigation an animation when it is moving up and down with the Javascript */
 #navigation {
     background-color: white;
     list-style-type: none;
@@ -100,13 +103,13 @@ iframe {
     z-index: 1;
 }
 
-/* Make the logo appear inline and give it a margin */
+/* Make the logo appear next to the other navigation and give it a margin */
     #navigation li {
         display: inline-block;
         margin: 30px 0 30px 0;
     }
 
-    /* Make underline hover only go  */
+        /* Make the other links in the list work like navigaitonal elements such as proper padding and no copying the underline from other a tags */
         #navigation li a{
             color: black;
             text-decoration: none;
@@ -114,7 +117,8 @@ iframe {
             position: relative;
         }
 
-/* Specify the font size and weight for the logo */
+/* Churchill House link in top left corner of page ususally where a companies logo is.
+ Make this text slightly larger than other navigation links so it stands out */
 #logo {
     font-size: 40px;
     display: inline-block;
@@ -125,12 +129,16 @@ iframe {
     text-decoration: none;
 }
 
-/* Float the other navigation to the right and give it the same 
-   padding as the logo element */
+/* Float the list of navigation items to the right and give it equal padding to the logo on the navigation bar */
 .nav-element {
     float: right;
     padding: 10px;
 }
+
+/*------------*/
+/* UPTO HERE */
+/*------------*/
+
 
 /* Specify the font size for the left navigation */
     .nav-element li a{
