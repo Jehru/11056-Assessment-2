@@ -487,6 +487,11 @@ Also adding a background colour when the user hovers over it */
         line-height: 7vw;
     }
 
+    .wrapper ul {
+        list-style-type: square;
+        padding-left: 8vw; 
+    }
+    
     footer {
         font-size: 2em;
     }
