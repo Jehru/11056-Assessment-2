@@ -460,7 +460,10 @@ Also adding a background colour when the user hovers over it */
 @media screen and (max-width: 1100px) {
     body {
         background-color: pink;
-        font-size: 1vw;
+    }
+    
+    main {
+        font-size: 2vw;
     }
     
     section p {
@@ -470,7 +473,7 @@ Also adding a background colour when the user hovers over it */
     .wrapper {
         width: 70%;
         margin: 100px auto;
-        line-height: 30px;
+        line-height: 7vw;
     }
 
     footer {
