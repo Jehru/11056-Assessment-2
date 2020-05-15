@@ -463,7 +463,18 @@ Also adding a background colour when the user hovers over it */
     }
     
     main {
-        font-size: 2vw;
+        font-size: 1.5em;
+    }
+    
+    h1{
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
     }
     
     section p {
@@ -477,15 +488,15 @@ Also adding a background colour when the user hovers over it */
     }
 
     footer {
-        font-size: 3vw;
+        font-size: 2em;
     }
     
     footer a {
-        font-size: 2.6vw;
+        font-size: 0.6em;
     }
     
     .footer-nav a{
-        font-size: 4vw;
+        font-size: 1.4em;
     }
     
     footer p {
@@ -494,7 +505,6 @@ Also adding a background colour when the user hovers over it */
         line-height: 6vw;
     }
 
-    
     #hero-text {
         position: absolute;
         top: 25%;
@@ -561,12 +571,13 @@ Also adding a background colour when the user hovers over it */
         width: 80%;
         margin: 20px auto;
         margin-top: 20px;
-        font-size: 0.7vw;
+        font-size: 0.4em;
     }
     
     figcaption a {
-        font-size: 0.7vw;
+        font-size: 1em;
     }
+    
     
     /*-------------------------*/
     /*------ MOBILE MENU ------*/
@@ -722,6 +733,7 @@ Also adding a background colour when the user hovers over it */
         top: 0 !important;
         transition: top 0.3s;
         z-index: 1;
+        height: 200px;
     }
 }
 
