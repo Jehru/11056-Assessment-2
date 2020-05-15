@@ -279,7 +279,7 @@ without creating a 110px distance between these two */
 /* An image and text are used in the same box */
 
 /* Sets the main contaniner on the page */
-.text-image-container {
+.text-img-container {
     display: flex;
     background-color: lightgrey;
     width: 70%;
@@ -288,7 +288,7 @@ without creating a 110px distance between these two */
 
 /* As the box is made up of two divs, this styles these two sides by giving 
 them borders */
-.text-image-container div {
+.text-img-container div {
     margin: 10px;
     padding: 60px;
     font-size: 30px;
@@ -297,13 +297,13 @@ them borders */
 }
 
 /* Sets the line height and font size for the text side (left) */
-.text-image-container div p{
+.text-img-container div p{
     font-size: 17px;
     line-height: 23px;
 }
 
 /* Sets the style for the image in the image side (right) */
-.text-image-container div img{
+.text-img-container div img{
     display: inline-block;
     vertical-align: middle;
     width: 100%;
@@ -491,7 +491,14 @@ Also adding a background colour when the user hovers over it */
     
     #hero-text {
         position: absolute;
-        top: 30%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #hero-text-alt {
+        position: absolute;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -524,6 +531,23 @@ Also adding a background colour when the user hovers over it */
     
     .image-column {
         width: 100%;
+    }
+    
+    .text-img-container {
+        display: block;
+        width: 100%;
+        
+    }
+    
+    .text-img-container div {
+        margin: 0 auto;
+        width: 70%;
+        text-align: left;
+        padding: 60px 30px;
+    }
+    
+    .text-img-container div p {
+        font-size: 1.7vw;
     }
     
     
