@@ -457,11 +457,11 @@ Also adding a background colour when the user hovers over it */
 @media screen and (max-width: 1100px) {
     body {
         background-color: pink;
+        font-size: 1vw;
     }
     
     section p {
         margin: 20px 0;
-        font-size:1.7vw;
     }
     
     .wrapper {
@@ -475,7 +475,7 @@ Also adding a background colour when the user hovers over it */
     }
     
     footer a {
-        font-size: 1.3vw;
+        font-size: 0.9vw;
     }
     
     .footer-nav a{
@@ -491,14 +491,14 @@ Also adding a background colour when the user hovers over it */
     
     #hero-text {
         position: absolute;
-        top: 40%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     
     #hero-text-alt {
         position: absolute;
-        top: 35%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -547,7 +547,7 @@ Also adding a background colour when the user hovers over it */
     }
     
     .text-img-container div p {
-        font-size: 1.7vw;
+        font-size: 1vw;
     }
     
     
