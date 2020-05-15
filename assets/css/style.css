@@ -383,6 +383,9 @@ However this implementation is not the best as its not really visible */
     
 }
 
+figcaption {
+    margin: 20px auto;
+}
 
 /*-------------------------*/
 /*--------- FOOTER --------*/
@@ -485,7 +488,7 @@ Also adding a background colour when the user hovers over it */
     footer p {
         width: 80%;
         margin: 40px auto;
-        line-height: 23px;
+        line-height: 30px;
     }
 
     
@@ -548,8 +551,19 @@ Also adding a background colour when the user hovers over it */
     
     .text-img-container div p {
         font-size: 1vw;
+        line-height: 30px;
     }
     
+    figcaption {
+        width: 80%;
+        margin: 20px auto;
+        margin-top: 20px;
+        font-size: 0.7vw;
+    }
+    
+    figcaption a {
+        font-size: 0.7vw;
+    }
     
     /*-------------------------*/
     /*------ MOBILE MENU ------*/
@@ -728,6 +742,7 @@ Also adding a background colour when the user hovers over it */
     footer p {
         width: 80%;
         margin: 30px auto;
+        line-height: 30px;
     }
     
     .big-img-vert {
