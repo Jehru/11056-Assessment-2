@@ -458,9 +458,6 @@ Also adding a background colour when the user hovers over it */
 
 /* This was identified as a breakpoint*/
 @media screen and (max-width: 1100px) {
-    body {
-        background-color: pink;
-    }
     
     main {
         font-size: 1.5em;
@@ -787,7 +784,6 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (max-width: 700px) {
     body {
-        background-color: blue;
         font-family: "Roboto", sans-serif;
         font-size: 17px; 
     }
