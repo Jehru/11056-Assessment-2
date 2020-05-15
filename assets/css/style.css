@@ -477,21 +477,21 @@ Also adding a background colour when the user hovers over it */
     }
 
     footer {
-        font-size: 2.3vw;
+        font-size: 3vw;
     }
     
     footer a {
-        font-size: 0.9vw;
+        font-size: 2.6vw;
     }
     
     .footer-nav a{
-        font-size: 2.3vw;
+        font-size: 4vw;
     }
     
     footer p {
         width: 80%;
         margin: 40px auto;
-        line-height: 30px;
+        line-height: 6vw;
     }
 
     
