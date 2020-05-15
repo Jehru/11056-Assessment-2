@@ -479,6 +479,27 @@ Also adding a background colour when the user hovers over it */
         background-color: blue;
     }
     
+    
+    .wrapper {
+        width: 70%;
+        margin: 100px auto;
+        line-height: 3vw;
+    }
+    
+    #hero-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #hero-text-alt {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
     /*------ TABLET MENU ------*/
     /* Is similar to mobile navigation however its adjusted for tablet view*/
     
@@ -630,7 +651,7 @@ Also adding a background colour when the user hovers over it */
         list-style: none;
         color: #fff;
         font-size: 1.5em;
-        padding: 3rem;
+        padding: 2rem;
     }
     
     /* Styling for the link tags tags*/
