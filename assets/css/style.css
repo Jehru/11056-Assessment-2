@@ -446,7 +446,7 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (min-width: 1101px) {
 
-    .mobile-menu {
+    .menu-wrap {
         display:none;
     }
     
@@ -516,14 +516,14 @@ Also adding a background colour when the user hovers over it */
 
     #hero-text {
         position: absolute;
-        top: 25%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     
     #hero-text-alt {
         position: absolute;
-        top: 25%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -763,6 +763,18 @@ Also adding a background colour when the user hovers over it */
     }
     
     #hero-img {
+        height: 1000px;
+    }
+    
+    #hero-img-desc {
+        height: 1000px;
+    }
+    
+    #hero-img-hist {
+        height: 1000px;
+    }
+    
+    #hero-img-arch {
         height: 1000px;
     }
 }
