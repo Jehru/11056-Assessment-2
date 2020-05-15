@@ -479,13 +479,29 @@ Also adding a background colour when the user hovers over it */
         background-color: blue;
     }
     
-    /* Remove the mobile menu so its not visible in the tablet view */
-    .menu-wrap {
-        display: none;
-    }
-    
     /*------ TABLET MENU ------*/
     /* Is similar to mobile navigation however its adjusted for tablet view*/
+    
+      /* Fix up the navigation so it only appears at the top for people on smaller screen sizes */
+    #navigation{
+        background-color: white;
+        list-style-type: none;
+        width: 100%;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        /* JS Sticky Header CSS*/
+        position: absolute;
+        top: 0 !important;
+        transition: top 0.3s;
+        z-index: 1;
+        height: 100px;
+    }
+    
+    #logo {
+        font-size: 2em;
+        margin: 2vw;
+    }
+    
     
     /* Remove the desktop menu */
     .nav-element {
@@ -507,8 +523,8 @@ Also adding a background colour when the user hovers over it */
         right: 0;
         z-index: 3;
         cursor: pointer;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         opacity: 0;
         margin: 0px;
     }
@@ -519,9 +535,9 @@ Also adding a background colour when the user hovers over it */
         top: 0;
         right: 0;
         z-index: 2;
-        width: 80px;
-        height: 80px;
-        padding: 60px;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
         background: grey;
         display: flex;
         align-items: center;
@@ -547,9 +563,9 @@ Also adding a background colour when the user hovers over it */
         top: 0;
         right: 0;
         z-index: 2;
-        width: 80px;
-        height: 80px;
-        padding: 60px;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
         align-items: center;
         justify-content: center;
         fill: #ffffff;
@@ -613,7 +629,7 @@ Also adding a background colour when the user hovers over it */
     .mobile-menu li {
         list-style: none;
         color: #fff;
-        font-size: 5vw;
+        font-size: 1.5em;
         padding: 3rem;
     }
     
@@ -623,44 +639,7 @@ Also adding a background colour when the user hovers over it */
         text-decoration: none;
         transition: color 0.4s ease;
     }
- 
-    
-    /* Fix up the navigation so it only appears at the top for people on smaller screen sizes */
-    #navigation{
-        background-color: white;
-        list-style-type: none;
-        width: 100%;
-        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        /* JS Sticky Header CSS*/
-        position: absolute;
-        top: 0 !important;
-        transition: top 0.3s;
-        z-index: 1;
-        height: 200px;
-    }
-    
-    #logo {
-        font-size: 4em;
-        margin: 5vw;
-    }
-    
-    #hero-img {
-        height: 1000px;
-    }
-    
-    #hero-img-desc {
-        height: 1000px;
-    }
-    
-    #hero-img-hist {
-        height: 1000px;
-    }
-    
-    #hero-img-arch {
-        height: 1000px;
-    }
-    
+     
     
 }
 
@@ -819,7 +798,45 @@ Also adding a background colour when the user hovers over it */
     
     /*------ MOBILE MENU ------*/
 
-    /* Remove the desktop menu */
+    /* Adjusting the navigation bar and hero content */
+    /**/
+    #navigation{
+        background-color: white;
+        list-style-type: none;
+        width: 100%;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        /* JS Sticky Header CSS*/
+        position: absolute;
+        top: 0 !important;
+        transition: top 0.3s;
+        z-index: 1;
+        height: 200px;
+    }
+    
+    #logo {
+        font-size: 4em;
+        margin: 5vw;
+    }
+    
+    #hero-img {
+        height: 1000px;
+    }
+    
+    #hero-img-desc {
+        height: 1000px;
+    }
+    
+    #hero-img-hist {
+        height: 1000px;
+    }
+    
+    #hero-img-arch {
+        height: 1000px;
+    }
+    
+    
+    /* Remove the desktop menu navigation list from the nav bar */
     .nav-element {
         display:none;
     }
@@ -945,7 +962,7 @@ Also adding a background colour when the user hovers over it */
     .mobile-menu li {
         list-style: none;
         color: #fff;
-        font-size: 5vw;
+        font-size: 4em;
         padding: 3rem;
     }
     
@@ -957,79 +974,6 @@ Also adding a background colour when the user hovers over it */
     }
  
     
-    /* Fix up the navigation so it only appears at the top for people on smaller screen sizes */
-    #navigation{
-        background-color: white;
-        list-style-type: none;
-        width: 100%;
-        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        /* JS Sticky Header CSS*/
-        position: absolute;
-        top: 0 !important;
-        transition: top 0.3s;
-        z-index: 1;
-        height: 200px;
-    }
-    
-    #logo {
-        font-size: 4em;
-        margin: 5vw;
-    }
-    
-    #hero-img {
-        height: 1000px;
-    }
-    
-    #hero-img-desc {
-        height: 1000px;
-    }
-    
-    #hero-img-hist {
-        height: 1000px;
-    }
-    
-    #hero-img-arch {
-        height: 1000px;
-    }
 }
 
-
-
-
-/* Redundant Code */
-/*
-
-@media screen and (max-width: 700px) {
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 17px; 
-    }
-    .wrapper{
-        width: 80%;
-        margin: 80px auto;
-        line-height: 23px; 
-    }
-    footer p {
-        width: 80%;
-        margin: 30px auto;
-        line-height: 30px;
-    }
-    
-    .big-img-vert {
-        display: block;
-        margin: 0 auto;
-        height: 500px;
-    }
-    
-    #hero-text {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    
-}
-*/
 
