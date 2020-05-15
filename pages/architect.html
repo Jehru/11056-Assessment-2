@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Churchill House - Responsive Website </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-        <script src="../assets/script/scrollingnav.js"></script>
-    </head>
+<head>
+    <!--Title of Page. Links to CSS and Javascript files -->
+    <title>Churchill House - Responsive Website </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/script/scrollingnav.js"></script>
+</head>
+    
 <body> 
 <header>
-<!-- Main Desktop Navigation -->
+    <!-- Header is completely navigation related -->
+    <!-- Navigation needs the ID="navigation" for the Javascript to work -->
+    <!-- Main Desktop Navigation -->
     <nav id="navigation">
         <a id="logo" href="../index.html">Churchill House</a>
         <ul class="nav-element">
@@ -19,65 +23,69 @@
         </ul>
     </nav> 
 
-<!-- Mobile menu -->
-<div class="menu-wrap">
-<input type="checkbox" class="toggler">
-    <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
-    
-    <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
-        <!-- https://iconmonstr.com/menu-1-svg/ -->
-    
-        <div class="menu">
-        <div class="overlay">
-            <div>
-            <ul class="mobile-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="description.html">The Description</a></li>
-                <li><a href="history.html">The History</a></li>
-                <li><a href="">The Architect</a></li>
-            </ul>
-        </div>
+    <!-- Mobile Navigation -->
+    <div class="menu-wrap">
+        <!-- Create a checkbox that will act as a toggle button to hide or display the mobile menu -->
+        <input type="checkbox" class="toggler">
+        
+            <!-- Hamburger menu icon -->
+            <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
+            <!-- https://iconmonstr.com/menu-1-svg/ -->
+
+            <!-- Exit menu icon -->
+            <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
+            <!-- https://iconmonstr.com/x-mark-1-svg/ -->
+
+            <!-- Mobile overlay and list of navigation items -->
+            <div class="menu">
+                <div class="overlay">
+                <div>
+                    <ul class="mobile-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="description.html">The Description</a></li>
+                        <li><a href="history.html">The History</a></li>
+                        <li><a href="">The Architect</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
       </div>
-    </div>
-  </div>
     
-    
-    <!-- Top of Page-->
+    <!-- Create a top of page link. This link doesnt display anything and acts an anchor point with the "top of page" link in the footer -->
     <a id="top"></a>
-    
 </header>
     
 <main>
-    
-<!--Hero Content-->
-<!--I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers-->
+    <!-- Hero Content -->
+    <!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers -->
     <div id="hero-img-arch">
         <img id="hero-img-hidden" src="../assets/images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg" alt="Hero image of Robyn Boyd">
     </div>
     
-    
-<h1 id="hero-text-alt">The Architect</h1>   
+    <!-- White "Churchill House" text that appears above the image -->
+    <h1 id="hero-text-alt">The Architect</h1>   
 
-<!-- About the Architect Section-->
+    <!-- About the Architect Section -->
+    <!-- Uses the wrapper class to maintain a similar layout with other elements on the page -->
     <section class="wrapper"> 
         <h2>Robin Boyd</h2>
         <p>Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra.</p>
             
         <p> Although the three partners were prominent as individuals, the firm maintained a strong design unity. Some buildings revealed the hand of one or other of the architects, but in general the firm developed a corporate style, combining the philosophies of the trio and representing the advanced thinking of that era. They often worked or supervised on each other’s projects. Their work was a distinctive Australian form of the International Style, then called Contemporary. (Clerehan, 1993) </p>
 
-<!--<img src="../">-->
         
         <p> Boyd joined the National Capital Planning Committee (<abbr title="National Capital Planning Committee">NCPC</abbr>) in January 1968 as one of two architectural experts, the other being Professor Gordon Stephenson from Western Australia. Boyd and Stephenson were charged with creating a statement of civic design philosophy that would form the basis of the <abbr title="National Capital Planning Committee">NCPC</abbr> policies relating to the Buildings (Design and Siting) Ordinance 1964. These policies would guide the aesthetic, development principles and layout of buildings in the National Capital areas of Canberra. </p>
 
-        <p> Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers, presented a TV series on Modernism and was the author of Victorian Modern: 111 Years of modern Architecture in the State of Victoria, Australia (1947); Australia’s Home: Its Origins, Builders and Occupiers (1952); The Australian Ugliness (1960); Kenzo Tange (1962); The Walls Around Us: The Story of Australian Architecture (1962); The Puzzle of Architecture (1965); New Directions in Japanese Architecture (1968); Living In Australia (1970); and The Great Great Australian Dream (1972 
-        posthumously).</p>
+        <p> Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers, presented a TV series on Modernism and was the author of Victorian Modern: 111 Years of modern Architecture in the State of Victoria, Australia (1947); Australia’s Home: Its Origins, Builders and Occupiers (1952); The Australian Ugliness (1960); Kenzo Tange (1962); The Walls Around Us: The Story of Australian Architecture (1962); The Puzzle of Architecture (1965); New Directions in Japanese Architecture (1968); Living In Australia (1970); and The Great Great Australian Dream (1972 posthumously).</p>
     </section>
     
+    <!-- Images in a flexbox. These images appear next to each other -->
     <div class="image-row">
         <img class="image-column" src="../assets/images/churchill-house-5.png" alt="Sketch of view of Churchill garden">
         <img class="image-column" src="../assets/images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg" alt="View of Churchill Garden">
     </div>
     
+    <!-- Uses the wrapper class to maintain similar visual formatting-->
     <section class="wrapper">
         <h3>List of Robyn Boyd's architectural buildings</h3>
         <p> His architectural work is mostly known through his residential designs. He was known for his ability to design houses that would meet client needs, solve site problems and still retain architectural integrity. The designs were heavily influenced by the functional and international styles of architecture and became known as the Melbourne Regional style. It was light, simple and elegant and unmistakably modern. (Architecture Today 1972; Saunders 1972; and Serle 1995)</p>
@@ -102,12 +110,14 @@
             </ul>
     </section>
     
+    <!-- Image of Verge House. This uses big-img-figure as its a figure image -->
     <figure class="big-img-figure">
-        <img src="../assets/images/verge-house-1.jpg">
+        <img src="../assets/images/verge-house-1.jpg" alt="Image of Verge House in Canberra">
         <figcaption>Verge House taken from Canberra House <a href="http://www.canberrahouse.com.au/houses/204-monaro.html"> (http://www.canberrahouse.com.au/houses/204-monaro.html)</a></figcaption>
     </figure>
     <!-- IMAGE taken from http://www.canberrahouse.com.au/houses/204-monaro.html -->
     
+    <!-- Uses the wrapper class to maintain similar visual formatting-->
     <section class="wrapper">    
         <p>In the 1960s he started to move away from the glass box functionalism of the International and Melbourne Regional styles arguing that it had a limited range of expression and instead tried, somewhat unsuccessfully, to land large prestigious commissions for advanced high-rise buildings. He submitted many designs, but few were successful. Those that he did win tended to be of a more moderate size, such as the Menzies College at La Trobe University or Churchill House. Taylor (1990:80) notes that Boyd’s interest in Brutalism was heavily influenced by his travels in Japan and he became known as the chief advocate in Australia for the <q>vigorous, concrete buildings of post-war Japan</q>, but goes on to note that his own attempts at major Brutalist designs show <q>...a somewhat crude, unexpressive, Brutalist aesthetic. Boyd’s later buildings are disappointing...</q>. </p>
         
@@ -116,12 +126,10 @@
         <p> Boyd received the Royal Australian Institute of Architects (<abbr title="Royal Australian Institute of Architects">RAIA</abbr>) Gold Medal in 1969 and was awarded a Commander of the Most Excellent Order of the British Empire (CBE) in 1971 for his services to architecture and government. In the same year he died suddenly from a stroke while recovering from an anaesthetic as part of treatment for an infection. As a result, his work on the Former Churchill House had to be completed by another architect, Bill Williams, who had been employed by Boyd to work on the project under the supervision of a more experienced architect, Neil Clerehan (who later designed the second storey of the north wing to replace the glass display pavilion). (Serle 1995)</p>   
     </section>    
     
-<!--<img>-->
-    
 </main>
     
-<!--Footer -->
 <footer>
+    <!-- Includes links to the other pages as well as a link to the top of the page -->
     <p>This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2020.</p>
         <p>Continue reading the other pages:</p>
         <ul class="footer-nav">

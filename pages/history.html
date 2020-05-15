@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Churchill House - Responsive Website </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-        <script src="../assets/script/scrollingnav.js"></script>
-    </head>
+<head>
+    <!--Title of Page. Links to CSS and Javascript files -->
+    <title>Churchill House - Responsive Website </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/script/scrollingnav.js"></script>
+</head>
 <body> 
 <header>
-<!-- Main Desktop Navigation -->
-    <nav id="navigation">
-        <a id="logo" href="../index.html">Churchill House</a>
-        <ul class="nav-element">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="description.html">The Description</a></li>
-                <li><a id="current-page" href="">The History</a></li>
-                <li><a href="architect.html">The Architect</a></li>
-        </ul>
-    </nav>    
-    
-<!-- Mobile menu -->
-<div class="menu-wrap">
-<input type="checkbox" class="toggler">
-    <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
-    
-    <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
-        <!-- https://iconmonstr.com/menu-1-svg/ -->
-    
-        <div class="menu">
-        <div class="overlay">
-            <div>
-            <ul class="mobile-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="description.html">The Description</a></li>
-                <li><a href="">The History</a></li>
-                <li><a href="architect.html">The Architect</a></li>
+    <!-- Header is completely navigation related -->
+    <!-- Navigation needs the ID="navigation" for the Javascript to work -->
+    <!-- Main Desktop Navigation -->
+        <nav id="navigation">
+            <a id="logo" href="../index.html">Churchill House</a>
+            <ul class="nav-element">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="description.html">The Description</a></li>
+                    <li><a id="current-page" href="">The History</a></li>
+                    <li><a href="architect.html">The Architect</a></li>
             </ul>
-        </div>
-      </div>
+        </nav>    
+    
+    <!-- Mobile Navigation -->
+    <div class="menu-wrap">
+        <!-- Create a checkbox that will act as a toggle button to hide or display the mobile menu -->
+        <input type="checkbox" class="toggler">
+        
+            <!-- Hamburger menu icon -->
+            <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
+            <!-- https://iconmonstr.com/menu-1-svg/ -->
+
+            <!-- Exit menu icon -->
+            <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
+            <!-- https://iconmonstr.com/x-mark-1-svg/ -->
+            
+            <!-- Mobile overlay and list of navigation items -->
+            <div class="menu">
+                <div class="overlay">
+                <div>
+                    <ul class="mobile-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="description.html">The Description</a></li>
+                        <li><a href="">The History</a></li>
+                        <li><a href="architect.html">The Architect</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
     </div>
-  </div>
     
-    <!-- Top of Page-->
+    <!-- Create a top of page link. This link doesnt display anything and acts an anchor point with the "top of page" link in the footer -->
     <a id="top"></a>
-    
 </header>
     
 <main>
-    
-<!--Hero Content-->
-<!--I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers-->    
+    <!-- Hero Content -->
+    <!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers -->  
     <div id="hero-img-hist">
-        <img id="hero-img-hidden" src="../assets/images/churchill-house-18.jpg">
+        <img id="hero-img-hidden" src="../assets/images/churchill-house-18.jpg" alt="Architectural section cut of Churchill House drawing">
     </div>
     
-<h1 id="hero-text-alt">History</h1>
+    <!-- White "Churchill House" text that appears above the image -->
+    <h1 id="hero-text-alt">History</h1>
     
     <!-- History section -->
+    <!-- Uses the wrapper class to maintain a similar layout with other elements on the page -->
     <section class="wrapper">
         <p>Churchill House was built by the Winston Churchill Memorial Trust of Australia. The Trust began consideration of erecting a building of its own in 1967 and formed a building committee in 1968. In 1969 it acquired a lease for land on Northbourne Avenue, the current site, and engaged the architect Robin Boyd to design the building.</p>
 
@@ -70,8 +79,10 @@
         <p>The cost of the works was about $1 million. The building was officially opened on 14 April 1972.</p>
     </section>
         
-        <img class="big-img-vert" src="../assets/images/churchill-house-38.jpg">
+<!-- Vertical image of nameplate on building. Uses big-img-vert class as its a vertical image -->
+        <img class="big-img-vert" src="../assets/images/churchill-house-38.jpg" alt="Image of Churchill House commemoration plaque">
     
+    <!-- Uses the wrapper class to maintain a similar layout with other elements on the page -->
     <section class="wrapper">
         <p>Boyd died in 1971 before completion, and W K Williams was engaged by the Trust as its site representative to replace Boyd.</p>
         
@@ -91,12 +102,13 @@
         <p>Churchill House is an early example in this context, and one of only two examples of an office building. While Brutalism has been described as an ethic rather than an aesthetic (Banham 1966:10), both office buildings display a more restrained form compared to the other buildings, several of which were intended to portray a distinctive image in the national capital.</p>
     </section>
     
-    <img class="big-img-horz-margin" src="../assets/images/churchill-house-16.jpg">
+    <!-- Image of Churchill House carpark. Uses big-img-horz-margin class as its a horizontal image with a bottom margin -->
+    <img class="big-img-horz-margin" src="../assets/images/churchill-house-16.jpg" alt="Image of Churchill House from the carpark ">
     
 </main>
     
-<!--Footer -->
 <footer>
+    <!-- Includes links to the other pages as well as a link to the top of the page -->
     <p>This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2020.</p>
         <p>Continue reading the other pages:</p>
         <ul class="footer-nav">

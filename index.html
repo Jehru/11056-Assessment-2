@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Title of Page, and links to CSS and Javascript-->
-        <title>Churchill House - Responsive Website </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script src="assets/script/scrollingnav.js"></script>
-    </head>
-    
+<head>
+<!--Title of Page. Links to CSS and Javascript files -->
+    <title>Churchill House - Responsive Website </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/script/scrollingnav.js"></script>
+</head>
+
 <body>
-<!-- Header is completely navigation related -->
-<!-- Code needs the ID navigation for the Javascript to work properly -->
 <header>
-<!-- Main Desktop Navigation -->
+    <!-- Header is completely navigation related -->
+    <!-- Navigation needs the ID="navigation" for the Javascript to work -->
+    <!-- Main Desktop Navigation -->
     <nav id="navigation">
         <a id="logo" href="">Churchill House</a>
         <ul class="nav-element">
@@ -23,46 +23,51 @@
         </ul>
     </nav> 
     
-<!-- Mobile menu -->
-<div class="menu-wrap">
-<input type="checkbox" class="toggler">
-    <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
-    <!-- https://iconmonstr.com/menu-1-svg/ -->
-    
-    
-    <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
-    <!-- https://iconmonstr.com/x-mark-1-svg/ -->
-    
-    <div class="menu">
-        <div class="overlay">
-            <div>
-            <ul class="mobile-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="pages/description.html">The Description</a></li>
-                <li><a href="pages/history.html">The History</a></li>
-                <li><a href="pages/architect.html">The Architect</a></li>
-            </ul>
-        </div>
-      </div>
+    <!-- Mobile Navigation -->
+    <div class="menu-wrap">
+        <!-- Create a checkbox that will act as a toggle button to hide or display the mobile menu -->
+        <input type="checkbox" class="toggler">
+
+            <!-- Hamburger menu icon -->
+            <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
+            <!-- https://iconmonstr.com/menu-1-svg/ -->
+
+            <!-- Exit menu icon -->
+            <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
+            <!-- https://iconmonstr.com/x-mark-1-svg/ -->
+
+            <!-- Mobile overlay and list of navigation items -->
+            <div class="menu">
+                <div class="overlay">
+                <div>
+                    <ul class="mobile-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="pages/description.html">The Description</a></li>
+                        <li><a href="pages/history.html">The History</a></li>
+                        <li><a href="pages/architect.html">The Architect</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
     </div>
-  </div>
     
-    <!-- Top of page. This works with clickable link below which brings the user to the top of the page  -->
+    <!-- Create a top of page link. This link doesnt display anything and acts an anchor point with the "top of page" link in the footer -->
     <a id="top"></a>
 </header>
     
 <main>
-<!-- Hero Content -->
-<!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers -->
+    <!-- Hero Content -->
+    <!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers -->
     <div id="hero-img"> 
         <img id="hero-img-hidden" src="assets/images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg" alt="Hero Image of Churchill House">
     </div>
     
-<!-- Main white churchill house text that appears on top of image -->
-<h1 id="hero-text">Churchill House</h1>
+    <!-- White "Churchill House" text that appears above the image -->
+    <h1 id="hero-text">Churchill House</h1>
 
 
-<!-- Introduction Section -->
+    <!-- Introduction Section -->
+    <!-- Uses the wrapper class to maintain a similar layout with other elements on the page -->
     <section class="wrapper">
         <h2>Introduction</h2>
         <p>Churchill House, at 216 Northbourne Avenue in Braddon, was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70, and construction was completed in 1971. It was Boyd’s last major commission, and he died prior to its completion. It is one of a small number of larger designs produced by Boyd and was Canberra’s first brutalist building. </p>
@@ -70,16 +75,16 @@
         <p>Several components make up the complex. The main building, with east and south wings; the separate north wing or pavilion; the central pool and a rear carpark. The main building forms an L shape and with the north wing it encloses a courtyard with a large ornamental pool. The main building is three storeys high with a four storey lift tower at the southeast corner. The north wing and the carpark are two storeyed.</p>
 
         <p>Although it has undergone some alterations over the years, the building still displays key features of the brutalist style with its large areas of blank wall and use off-form concrete, sloping structural fins and precast concrete non-loadbearing wall panels, precast fins for sun protection, and vertical slit windows. Churchill House displays a fairly restrained form in comparison with the major Canberra buildings that followed in this style: Cameron Offices, National Gallery of Australia and High Court of Australia.</p>
-        
     </section>
 
-<!-- Images in a flexbox. Images appear side by side -->
+    <!-- Images in a flexbox. These images appear next to each other -->
     <div class="image-row">
         <img class="image-column" src="assets/images/churchill-house-28.jpg" alt="Image of Churchill House's structural fins">
         <img class="image-column" src="assets/images/churchill-house-31.jpg" alt="Image of Churchill House's courtyard">
     </div>
 
-<!-- Statement of Significance section -->
+    <!-- Statement of Significance section -->
+    <!-- Uses the wrapper class to maintain similar visual formatting-->
     <section class="wrapper">
         <h2>Statement of Signifiance</h2>
         <p>Churchill House is a good example of the Late Twentieth Century Brutalist style, (1960-), displaying several key features as follows:</p> 
@@ -98,8 +103,7 @@
         <p>Churchill House has interest for its association with the prominent architect, Robin Boyd. The building was his last major commission.</p>
     </section>
 
-<!-- Google Maps Location-->
-<!-- Includes the coordinates of the site -->
+    <!-- Google Maps Location of the site -->
     <section class="wrapper">
         <h3>Location of the Site:</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.7622649349237!2d149.13048610146126!3d-35.2621697500453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1652997c33f99f%3A0x24a78bb62971e4b2!2sChurchill%20House%2C%20218%20Northbourne%20Ave%2C%20Braddon%20ACT%202612!5e0!3m2!1sen!2sau!4v1586491074143!5m2!1sen!2sau" height="500" aria-hidden="false" aria-label="Google Map location of Churchill House" tabindex="0"></iframe>
@@ -107,9 +111,8 @@
     
 </main>
     
-<!-- Footer -->
 <footer>
-<!-- Includes links to other pages as well as a link to the top of the page -->
+    <!-- Includes links to the other pages as well as a link to the top of the page -->
     <p>This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2020.</p>
         <p>Continue reading the other pages:</p>
         <ul class="footer-nav">

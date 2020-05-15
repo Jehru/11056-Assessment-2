@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Title of Page, and links to CSS and Javascript-->
-        <title>Churchill House - Responsive Website </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-        <script src="../assets/script/scrollingnav.js"></script>
-    </head>
+<head>
+    <!--Title of Page. Links to CSS and Javascript files -->
+    <title>Churchill House - Responsive Website </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/script/scrollingnav.js"></script>
+</head>
 <body> 
 <header>
-<!-- Header is completely navigation related -->
-<!-- I used excess selectors so that I could target each individual part to style it in CSS
-Logo goes on right side and navigation goes on left side -->
-    <nav id="navigation">
-        <a id="logo" href="../index.html">Churchill House</a>
-        <ul class='nav-element'>
-                <li><a href="../index.html">Home</a></li>
-                <li><a id="current-page" href="">The Description</a></li>
-                <li><a href="history.html">The History</a></li>
-                <li><a href="architect.html">The Architect</a></li>
-        </ul>
-    </nav>    
-    
-<!-- Mobile menu -->
-<div class="menu-wrap">
-<input type="checkbox" class="toggler">
-    <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
-    
-    <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
-        <!-- https://iconmonstr.com/menu-1-svg/ -->
-    
-        <div class="menu">
-        <div class="overlay">
-            <div>
-            <ul class="mobile-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="">The Description</a></li>
-                <li><a href="history.html">The History</a></li>
-                <li><a href="architect.html">The Architect</a></li>
+    <!-- Header is completely navigation related -->
+    <!-- Navigation needs the ID="navigation" for the Javascript to work -->
+    <!-- Main Desktop Navigation -->
+        <nav id="navigation">
+            <a id="logo" href="../index.html">Churchill House</a>
+            <ul class='nav-element'>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a id="current-page" href="">The Description</a></li>
+                    <li><a href="history.html">The History</a></li>
+                    <li><a href="architect.html">The Architect</a></li>
             </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+        </nav>    
     
-    <!-- Top of page. This works with clickable link below which brings the user to the top of the page  -->
+    <!-- Mobile Navigation -->
+    <div class="menu-wrap">
+        <!-- Create a checkbox that will act as a toggle button to hide or display the mobile menu -->
+        <input type="checkbox" class="toggler">
+
+            <!-- Hamburger menu icon -->
+            <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></div>
+            <!-- https://iconmonstr.com/menu-1-svg/ -->
+
+            <!-- Exit menu icon -->
+            <div class="hamburger-exit"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></div>
+            <!-- https://iconmonstr.com/x-mark-1-svg/ -->
+
+            <!-- Mobile overlay and list of navigation items -->
+            <div class="menu">
+                <div class="overlay">
+                <div>
+                    <ul class="mobile-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="">The Description</a></li>
+                        <li><a href="history.html">The History</a></li>
+                        <li><a href="architect.html">The Architect</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+    </div>
+    
+    <!-- Create a top of page link. This link doesnt display anything and acts an anchor point with the "top of page" link in the footer -->
     <a id="top"></a>
 </header>
     
 <main>
-<!-- Hero Content -->
-<!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers --> 
+    <!-- Hero Content -->
+    <!-- I included a hidden image so that it is more accessible to people with assistive technologies such as screen readers -->
     <div id="hero-img-desc">
         <img id="hero-img-hidden" src="../assets/images/churchill-house-4.jpg" alt="Hero image of Architectural drawings of Churchill House">
     </div>
     
-<h1 id="hero-text-alt">Description</h1>
+    <!-- White "Churchill House" text that appears above the image -->
+    <h1 id="hero-text-alt">Description</h1>
 
     <!-- Brief intro -->
+    <!-- Uses the wrapper class to maintain a similar layout with other elements on the page -->
     <section class="wrapper">
         <h2>Intro</h2>
         <p>Churchill House was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete.</p>
@@ -65,9 +73,11 @@ Logo goes on right side and navigation goes on left side -->
         <p>The complex comprises a number of components: the main building with its east and south wings, the separate north wing or pavilion, the pool and the rear carpark. The main building forms an L shape in plan, and with the north wing it encloses on three sides a courtyard in which the pool is located. The main building is of three storeys with a four storey lift tower at the southeast corner, the north wing is of two storeys, and the carpark is two storeyed.</p>
     </section>
 
+    <!-- Image of old floor plan of Churchill House. Uses big-img-horz class as its a horizontal image -->
     <img class="big-img-horz" src="../assets/images/churchill-house-19.jpg" alt="Architectural floorplan of Churchill House">
     
-    <!-- Main building description-->
+    <!-- Main building section-->
+    <!-- Uses the wrapper class to maintain similar visual formatting-->
     <section class="wrapper">
         <h2>Main Building</h2>
         <p>The main building displays several different elevational treatments. The elevations facing onto the pool area feature floor to ceiling glass with minimal black metal frames to the lowest level, and precast vertical panels on the upper two storeys. Each panel has a projecting fin and are relatively narrow, with the overall affect being of closely spaced vertical fins. Beside the fins are narrow, slot windows providing minimal outlook onto the pool area.</p>
@@ -81,16 +91,21 @@ Logo goes on right side and navigation goes on left side -->
         <p>The roof of the main building is set behind a parapet and appears to be graded concrete with a membrane coating.</p>
     </section>
 
-<!-- North wing description-->
-<div class="text-img-container">
-  <div> 
-    <h2>North Wing</h2>
-    <p>The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p> </div>
-  <div><img src="../assets/images/churchill-house-12.jpg" alt="Inverted image of building"></div>  
-</div>
+    <!-- North wing description-->
+    <!-- Uses the text-img-container class which places the text right next to an image-->
+    <div class="text-img-container">
+        <div> 
+            <h2>North Wing</h2>
+            <p>The north wing replaces an earlier pavilion on the same location. The current wing is a two storey structure with a flat metal deck roof set behind a parapet. The wing has an encircling steel colonnade which supports the roof and parapet. The walls are set back from the colonnade and feature flush-mounted glazing set in thin black metal frames, with textured off-form concrete spandrels, similar to the south wall of the south wing. There is an enclosed link between the north and east wings at the ground floor level.</p> 
+        </div>
+        <div>
+            <img src="../assets/images/churchill-house-12.jpg" alt="Inverted image of building">
+        </div>  
+    </div>
     
-    
-<!-- Pool Area, Carpark and landscaping description-->
+
+    <!-- Pool Area, Carpark and landscaping description-->
+    <!-- Uses the wrapper class to maintain similar visual formatting-->
     <section class="wrapper">
         <h2>Pool Area, Carpark and Landscaping </h2>
         <p>The pool area is lower than the surrounding site, and being mostly enclosed by the wings, has the quality of a sunken courtyard. The pool area is reached by a large flight of concrete steps from the west, and features a pond which borders a large, raised central island which is reached from one side by a set of bridging steps. The island has concrete paving, garden beds and silver birch trees, and is the location for a large fibreglass statue of Sir Winston Churchill.</p>
@@ -100,9 +115,12 @@ Logo goes on right side and navigation goes on left side -->
         <p>Churchill House has a number of landscape/garden areas. At the front (west) of the building is an open lawn area and either side are mixed native/exotic plantings. The pool area contains numerous trees and shrubs, again of mixed native/exotic species. A small courtyard to the southeast of the main building features bamboo.</p>
     </section>
 
+    <!-- Image of Churchill House -->
+    <!-- Uses the big-img-horz class which is for horizontal images -->
     <img class="big-img-horz" src="../assets/images/churchill-house-36.jpg" alt="Corner of Churchill House">
     
-<!-- Stylistic analysis section-->
+    <!-- Stylistic Analysis section-->
+    <!-- Uses the wrapper class to maintain similar visual formatting-->
     <section class="wrapper">
         <h2>Stylistic Analysis</h2>
         <p>Churchill House displays several key features of the Late Twentieth Century Brutalist style as follows.</p>
@@ -133,23 +151,25 @@ Logo goes on right side and navigation goes on left side -->
         <p>None the less, the building retains substantial components and details of the original design.</p>
     </section> 
     
-<!-- Image Galllery -->
+    <!-- Image Carousel -->
+    <!-- Uses the wrapper-no-padding class which is similar to the wrapper class but has no top/bottom padding -->
     <section class="wrapper-no-padding">
         <h3>Scroll through some images here:</h3>
     </section>
-<!-- Image Carousel -->
-<div class="carousel">
-    <img class="carousel-img" src="../assets/images/churchill-house-10.jpg" alt="Section cut of Churchill House sketch">
-    <img class="carousel-img" src="../assets/images/churchill-house-28.jpg" alt="Angled image of sidefins">
-    <img class="carousel-img" src="../assets/images/churchill-house-34.jpg" alt="Wall of Churchill House">
-    <img class="carousel-img" src="../assets/images/churchill-house-39.jpg" alt="Image showcasing the structral fins">
-    <img class="carousel-img" src="../assets/images/churchill-house-46.jpg" alt="Image from carpark showing the L-shaped corner">
-</div>
+    <!-- All images in carousel-->
+    <!-- All images use the carousel-img class which places them next to each other and the user can scroll horizontally through them all -->
+    <div class="carousel">
+        <img class="carousel-img" src="../assets/images/churchill-house-10.jpg" alt="Section cut of Churchill House sketch">
+        <img class="carousel-img" src="../assets/images/churchill-house-28.jpg" alt="Angled image of sidefins">
+        <img class="carousel-img" src="../assets/images/churchill-house-34.jpg" alt="Wall of Churchill House">
+        <img class="carousel-img" src="../assets/images/churchill-house-39.jpg" alt="Image showcasing the structral fins">
+        <img class="carousel-img" src="../assets/images/churchill-house-46.jpg" alt="Image from carpark showing the L-shaped corner">
+    </div>
     
 </main>
-    
-<!--Footer -->
+
 <footer>
+    <!-- Includes links to the other pages as well as a link to the top of the page -->
     <p>This website was produced by students in the Faculty of Arts &amp; Design, University of Canberra, 2020.</p>
         <p>Continue reading the other pages:</p>
         <ul class="footer-nav">
