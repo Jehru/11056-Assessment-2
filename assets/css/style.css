@@ -172,7 +172,7 @@ iframe {
 /*-------------------------*/
 
 /* Hero image on the home page (the hero images also have parrallax scrolling) */
-#hero-image {
+#hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
     height: 750px;
     background-attachment: fixed;
@@ -209,7 +209,7 @@ screen reader could not read the image which was added through css */
 /*-------------------------*/
 
 /* This is the hero image for the description page (the hero images also have parallax scrolling) */
-#hero-image-desc {
+#hero-img-desc {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/churchill-house-4.jpg');
     height: 750px;
     background-attachment: fixed;
@@ -220,7 +220,7 @@ screen reader could not read the image which was added through css */
 }
 
 /* This is the hero image for the history page (the hero images also have parallax scrolling) */
-#hero-image-hist {
+#hero-img-hist {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/churchill-house-18.jpg');
     height: 750px;
     background-attachment: fixed;
@@ -230,7 +230,7 @@ screen reader could not read the image which was added through css */
 }
 
 /* This is the hero image for the architecture page (the hero images also have parallax scrolling) */
-#hero-image-arch {
+#hero-img-arch {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg');
     height: 750px;
     background-attachment: fixed;
@@ -477,6 +477,10 @@ Also adding a background colour when the user hovers over it */
         font-size: 1.8em;
     }
     
+    h3 {
+        font-size: 1em;
+    }
+    
     section p {
         margin: 20px 0;
     }
@@ -568,8 +572,8 @@ Also adding a background colour when the user hovers over it */
     }
     
     .text-img-container div p {
-        font-size: 1vw;
-        line-height: 30px;
+        font-size: 1em;
+        line-height: 7vw;
     }
     
     figcaption {
@@ -581,6 +585,18 @@ Also adding a background colour when the user hovers over it */
     
     figcaption a {
         font-size: 1em;
+    }
+    
+    .wrapper-no-padding {
+        width: 90%;
+        line-height: 0px; 
+    }
+    
+    .carousel-img {
+        margin: 0 auto;
+        width: auto;
+        height: 70vw;
+        padding: 0 20px 0 20px;
     }
     
     
@@ -608,8 +624,8 @@ Also adding a background colour when the user hovers over it */
         right: 0;
         z-index: 3;
         cursor: pointer;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         opacity: 0;
         margin: 0px;
     }
@@ -620,9 +636,9 @@ Also adding a background colour when the user hovers over it */
         top: 0;
         right: 0;
         z-index: 2;
-        width: 60px;
-        height: 60px;
-        padding: 20px;
+        width: 80px;
+        height: 80px;
+        padding: 60px;
         background: grey;
         display: flex;
         align-items: center;
@@ -648,9 +664,9 @@ Also adding a background colour when the user hovers over it */
         top: 0;
         right: 0;
         z-index: 2;
-        width: 60px;
-        height: 60px;
-        padding: 20px;
+        width: 80px;
+        height: 80px;
+        padding: 60px;
         align-items: center;
         justify-content: center;
         fill: #ffffff;
@@ -739,6 +755,15 @@ Also adding a background colour when the user hovers over it */
         transition: top 0.3s;
         z-index: 1;
         height: 200px;
+    }
+    
+    #logo {
+        font-size: 4em;
+        margin: 5vw;
+    }
+    
+    #hero-img {
+        height: 1000px;
     }
 }
 
