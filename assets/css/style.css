@@ -483,7 +483,7 @@ Also adding a background colour when the user hovers over it */
     .wrapper {
         width: 70%;
         margin: 100px auto;
-        line-height: 3vw;
+        line-height: 2.5vw;
     }
     
     #hero-text {
@@ -665,6 +665,33 @@ Also adding a background colour when the user hovers over it */
 }
 
 
+/*------------------------------------*/
+/*-- Screen Between 768 and 1023px ---*/
+/*------------ Tablet View -----------*/
+/*------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation:landscape) {
+    
+    body {
+        background-color: purple;
+    }
+    
+    #hero-text {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #hero-text-alt {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+}
 
 
 /*------------------------------------*/
@@ -672,7 +699,6 @@ Also adding a background colour when the user hovers over it */
 /*------------ Mobile View -----------*/
 /*------------------------------------*/
 
-/* This was identified as a breakpoint*/
 @media screen and (max-width: 767px) {
     
     body {
@@ -689,9 +715,11 @@ Also adding a background colour when the user hovers over it */
     
     h2 {
         font-size: 2em;
+        line-height: 8vw;
     }
     h2 {
         font-size: 1.8em;
+        line-height: 8vw;
     }
     
     h3 {
@@ -705,7 +733,7 @@ Also adding a background colour when the user hovers over it */
     .wrapper {
         width: 70%;
         margin: 100px auto;
-        line-height: 7vw;
+        line-height: 5.5vw;
     }
 
     .wrapper ul {
