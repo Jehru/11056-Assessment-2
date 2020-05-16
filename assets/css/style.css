@@ -82,6 +82,10 @@ iframe {
     height: 500px;
 }
 
+/* Gives the figure capton some spacing between the image and the text */
+figcaption {
+    margin: 20px auto;
+}
 
 /*-------------------------*/
 /*------- NAVIGATION ------*/
@@ -362,48 +366,43 @@ This occurs on the home page and the architect page. They are placed in a flexbo
 /*------ IMAGE CAROSEL ----*/
 /*-------------------------*/
 
-/* The styling for the image carousel at the bottom of the description page. 
-However this implementation is not the best as its not really visible */
-/* Main class for the whole carousel */
+/* The styling for the image carousel at the bottom of the description page. However this implementation is not the best as the slider is not visible */
+/* Main class for the whole carousel. Overflow-x:auto is what sets it apart from the other flexbox method */
 .carousel {
     display: flex;
     overflow-x: auto;
     margin: 20px 0 50px 0;
 }
-/* Class for each individual image class in the carousel */
+/* Class for each individual image class in the carousel. Sets the correct width and padding so its looks better */
 .carousel-img {
-/*    float: left;*/
     width: 40%;
     margin: 0 auto;
-/*    height: auto;*/
     padding: 0 20px 0 20px;
-    
-}
-
-figcaption {
-    margin: 20px auto;
 }
 
 /*-------------------------*/
 /*--------- FOOTER --------*/
 /*-------------------------*/
 
-/* Creating the footer. I wanted the footer to stand out from the other content so I used
-a light grey colour scheme and a lot of padding */
+/* UPTO HERE */
+
+
+/* Create the footer. I wanted the footer to stand out from the other content so I used
+a light grey colour scheme and a lot of padding to give it a large footer effect */
 footer { 
     background-color: lightgrey;
     padding: 80px;
     text-align: center;
 }
 
-/* Copies a similar structure to the wrapper mentioned above. Makes sure to use similar line height */
+/* Copies a similar structure to the wrapper created above however this content is centred */
 footer p {
     width: 35%;
     margin: 30px auto;
     line-height: 23px; 
 }
 
-/* Styling of the footer navigation */
+/* Styling of the footer navigation. Add a bottom margin and remove any other link styling */
 .footer-nav {
     list-style: none;
     margin-bottom: 60px;
@@ -414,7 +413,7 @@ footer p {
     display: inline;
 }
 
-/* This is the individual styling for each link in the footer navigation */
+/* This is the individual styling for each link inside in the footer navigation. The border and padding create a button look.  */
 .footer-nav li a {
     display: inline-block;
     color: black;
@@ -424,8 +423,7 @@ footer p {
     border: 1px solid black;
 }
 
-/* Removing the previous hover underline link (as we want to replace it with the thicker lined one) 
-Also adding a background colour when the user hovers over it */
+/* Removing the previous hover underline link. Also adds a background colour to the button when the user hovers over it */
 .footer-nav li a:hover {
     text-decoration: none;
     background-color: grey;
@@ -443,7 +441,7 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (min-width: 1024px) {
     
-    /* Remove the mobile menu so its not visible in the tablet view */
+    /* Remove the mobile menu so its not visible in the desktop view */
     .menu-wrap {
         display: none;
     }
@@ -459,12 +457,14 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
+    /* Adjust the wrapper so it extends further out so its much more readable for this screen size. Also change to a variable line height*/
     .wrapper {
         width: 70%;
         margin: 100px auto;
         line-height: 2.5vw;
     }
     
+    /* Adjust the hero text so that it appears more centered on these screen sizes */
     #hero-text {
         position: absolute;
         top: 30%;
@@ -472,6 +472,7 @@ Also adding a background colour when the user hovers over it */
         transform: translate(-50%, -50%);
     }
     
+    /* Also adjust the hero text for the alternate pages */
     #hero-text-alt {
         position: absolute;
         top: 30%;
@@ -479,19 +480,20 @@ Also adding a background colour when the user hovers over it */
         transform: translate(-50%, -50%);
     }
     
+    /* Adjust vertical image class so that it is smaller */
     .big-img-vert {
         display: block;
         margin: 0 auto;
         height: 550px;
     }
 
-    
+    /* Adjust the text image container (image and text side by side) so that it takes up 90% of the screen */
     .text-img-container {
         display: block;
         width: 90%;
-        
     }
     
+    /* Adjust the container div so that the two items sit underneath each other instead of side by side */
     .text-img-container div {
         margin: 0 auto;
         width: 70%;
@@ -499,6 +501,7 @@ Also adding a background colour when the user hovers over it */
         padding: 60px 30px;
     }
     
+    /* Adjust the figure image so that it takes up 80% of the screen and does not extend beyond the view */
     .big-img-figure img {
         display: block;
         margin: 0 auto;
@@ -507,17 +510,18 @@ Also adding a background colour when the user hovers over it */
     }
     
     
-    /*------ TABLET MENU ------*/
-    /* Is similar to mobile navigation however its adjusted for tablet view*/
+    /*------ Tablet Navigation ------*/
+    /* Is similar to mobile navigation however its slightly smaller */
     
-      /* Fix up the navigation so it only appears at the top for people on smaller screen sizes */
+    /* Fix up the navigation so it only appears at the top for people on smaller screen sizes */
+    /* The navigation also no longer has the javascript sticky header effect. The position 0 is set to !important which means it no longer moves */
+    /* The rest of the navigation bar remains similar to the desktop view */
     #navigation{
         background-color: white;
         list-style-type: none;
         width: 100%;
         box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        /* JS Sticky Header CSS*/
         position: absolute;
         top: 0 !important;
         transition: top 0.3s;
@@ -525,6 +529,7 @@ Also adding a background colour when the user hovers over it */
         height: 100px;
     }
     
+    /* Sets a variable text size and variable margin for the "Churchill House" text in the top left corner */
     #logo {
         font-size: 2em;
         margin: 2vw;
@@ -536,7 +541,7 @@ Also adding a background colour when the user hovers over it */
         display:none;
     }
     
-    /* Menu Wrap is the main wrapping container for the whole mobile menu. This makes sure the mobile menu appears above the rest of the content */
+    /* Menu Wrap is the main wrapping container for the whole mobile menu. This makes sure the mobile menu appears above the rest of the content on the page */
     .menu-wrap {
         position: absolute;
         top: 0;
@@ -544,7 +549,7 @@ Also adding a background colour when the user hovers over it */
         z-index: 1;
     }
     
-    /* Toggler is the invisible checkbox which sees if the menu has been selected. If it has been selected the mobile menu will appear*/
+    /* Toggler is the invisible checkbox which sees if the menu has been pressed. If it has been selected the mobile menu will appear */
     .toggler {
         position: absolute;
         top: 0;
@@ -557,7 +562,7 @@ Also adding a background colour when the user hovers over it */
         margin: 0px;
     }
     
-    /* Hamburger is the class for the hamburger icon */
+    /* Hamburger is the class for the hamburger icon. Its filled in white with a grey background */
     .hamburger {
         position: absolute;
         top: 0;
@@ -574,17 +579,17 @@ Also adding a background colour when the user hovers over it */
     }
     
     
-    /* This is the class for the x icon to dismiss the menu once you open it */
+    /* Remove the "X" icon from view unless */
     .hamburger-exit{
         display: none;
     }
     
-    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The hamburger icon therefore becomes invisible. */
+    /* This checks to see if the toggler is checked. If the toggler is checked than the user has clicked to open the mobile menu, the hamburger icon therefore becomes invisible */
     .toggler:checked ~ .hamburger {
         visibility: hidden;
     }
     
-    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The X icon therefore appears in the spot where the hamburger menu was. */
+    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The X icon therefore appears in the spot where the hamburger menu was */
     .toggler:checked ~ .hamburger-exit {
         display: flex;    
         position: absolute;
@@ -616,7 +621,7 @@ Also adding a background colour when the user hovers over it */
         transition:  opacity 0.4s ease 0.4s;
     }
 
-    /* This sets the position of the grey overlay menu. It is of course invisible until the user clicks the checkbox*/
+    /* This sets the position of the grey overlay menu. It is invisible until the user clicks the checkbox */
     .menu {
         position: fixed;
         top: 0;
@@ -653,7 +658,7 @@ Also adding a background colour when the user hovers over it */
         transition: opacity 0.4s ease;
     }
     
-    /* Main styling for the list items*/
+    /* Main styling for the list items. Sets the font size and padding for each of the links */
     .mobile-menu li {
         list-style: none;
         color: #fff;
@@ -661,7 +666,7 @@ Also adding a background colour when the user hovers over it */
         padding: 2rem;
     }
     
-    /* Styling for the link tags tags*/
+    /* Styling for the link tags. Removes any other link styling */
     .mobile-menu > li > a {
         color: inherit;
         text-decoration: none;
@@ -679,6 +684,7 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation:landscape) {
     
+    /* Changes the hero text on the main page so that it does not hide underneath the navigation bar on tablets when in landscape mode */
     #hero-text {
         position: absolute;
         top: 55%;
@@ -686,6 +692,7 @@ Also adding a background colour when the user hovers over it */
         transform: translate(-50%, -50%);
     }
     
+    /* Changes the hero text on all the other pages so that it does not hide underneath the navigation bar on tablets when in landscape mode */
     #hero-text-alt {
         position: absolute;
         top: 55%;
@@ -705,60 +712,73 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (max-width: 767px) {
     
+    /* Sets the font size for any body text to be 1.5em (A variable width) on mobile screens */
     main {
         font-size: 1.5em;
     }
     
+    /* UPTO HERE & COPY + PASTE CODE ABOVE FOR MOBILE MENU */
+    
+    /* Use a bigger font for main heading */
     h1{
         font-size: 3em;
     }
     
+    /* Use a smaller font for subheadings */
     h2 {
         font-size: 2em;
         line-height: 8vw;
     }
-    h2 {
-        font-size: 1.8em;
-        line-height: 8vw;
-    }
     
+    /* Use almost the same size font for h3, except its bold */
     h3 {
         font-size: 1em;
     }
     
+    /* Gives each paragraph a larger margin (space between each paragraph) */
     section p {
         margin: 20px 0;
     }
     
+    /* Change the wrapper so its almost full width and give it a variable line height */
     .wrapper {
         width: 70%;
         margin: 100px auto;
         line-height: 5.5vw;
     }
+    
+    
+/* UP TO HERE */
 
+    /* Changes the list styling to squares as I found the unfilled circles hard to see on small screens */
     .wrapper ul {
         list-style-type: square;
         padding-left: 8vw; 
     }
     
+    /* Increase the font size of the footer to match the rest of the content */
     footer {
         font-size: 2em;
     }
     
+    /* Decrease the size of the blue "back to top link" as it was too big */
     footer a {
         font-size: 0.6em;
     }
     
+    /* Increase the size of the footer navigational buttons as they became too small with the code above */
     .footer-nav a{
         font-size: 1.4em;
     }
     
+    /* Style the footer paragraph so that it fits in with the wrapper width */
     footer p {
         width: 80%;
         margin: 40px auto;
         line-height: 6vw;
     }
 
+    /* Change the position of the hero text as it goes lower as the screen deceases in width */
     #hero-text {
         position: absolute;
         top: 30%;
@@ -766,6 +786,7 @@ Also adding a background colour when the user hovers over it */
         transform: translate(-50%, -50%);
     }
     
+    /* Similar to above css code. Position the hero text correctly */
     #hero-text-alt {
         position: absolute;
         top: 30%;
@@ -773,25 +794,28 @@ Also adding a background colour when the user hovers over it */
         transform: translate(-50%, -50%);
     }
     
-    
+    /* Make the horizontal images in the website bigger. This is reponse to the viewsize (A small screensize creates an even smaller image therefore this class makes it bigger)*/
     .big-img-horz {
         display: block;
         margin: 0 auto;
         width: 80%;
     }
     
+    /* Similarly to above increase the size of the images so they are viewable */
     .big-img-horz-margin {
         display: block;
         margin: 0 auto 40px;
         width: 80%;
     }
     
+    /* Slightly reduce the height of the vertical image. This is because 800px is too much height for a small screen */
     .big-img-vert {
         display: block;
         margin: 0 auto;
         height: 700px;
     }
     
+    /* Adjust the figure image width so it spans 90% of the view of the screen. */
     .big-img-figure img{
         display: block;
         margin: 0 auto;
@@ -799,16 +823,19 @@ Also adding a background colour when the user hovers over it */
         text-align: center;
     }
     
+    /* Change the side by side images so that they appear underneath each other instead of side by side */
     .image-column {
         width: 100%;
     }
     
+    /* Increase the size of the container where the text and the image sit side by side (found on the description page) */
     .text-img-container {
         display: block;
         width: 100%;
         
     }
     
+    /* Adjust the styling of each of the two sections in the */
     .text-img-container div {
         margin: 0 auto;
         width: 70%;
@@ -816,11 +843,13 @@ Also adding a background colour when the user hovers over it */
         padding: 60px 30px;
     }
     
+    /* Make the styling of the text the same in the */
     .text-img-container div p {
         font-size: 1em;
         line-height: 7vw;
     }
     
+    /* Adjust the figure text so that it is consistent with the rest of the website */
     figcaption {
         width: 80%;
         margin: 20px auto;
@@ -828,19 +857,22 @@ Also adding a background colour when the user hovers over it */
         font-size: 0.4em;
     }
     
+    /* Adjust the url in the figure so it is consistent in the rest of the website */
     figcaption a {
         font-size: 1em;
     }
     
+    /* Used for the title on the Carousel. Adjusting the styling so that it is more consistent with the rest of the site. It is no longer centred */
     .wrapper-no-padding {
         width: 90%;
         line-height: 0px; 
     }
     
+    /* Adjusting the styling for the images in the */
     .carousel-img {
         margin: 0 auto;
         width: auto;
-        height: 70vw;
+/*        height: 70vw;*/
         padding: 0 20px 0 20px;
     }
     
@@ -1007,7 +1039,7 @@ Also adding a background colour when the user hovers over it */
         transition: opacity 0.4s ease;
     }
     
-    /* Main styling for the list items*/
+    /* Main styling for the list items. Sets the font size and padding for the mobile navigation */
     .mobile-menu li {
         list-style: none;
         color: #fff;
