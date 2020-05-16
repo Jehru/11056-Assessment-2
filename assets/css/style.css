@@ -135,17 +135,13 @@ iframe {
     padding: 10px;
 }
 
-/*------------*/
-/* UPTO HERE */
-/*------------*/
 
-
-/* Specify the font size for the left navigation */
+/* Specify the font size for the navigation list (not the main logo) */
     .nav-element li a{
         font-size: 19px;
     }
 
-/* Tell the user which page they are on now using a lightgrey colour */
+/* Highlight the user which page they are on now using a lightgrey colour */
 #current-page {
     background-color: lightgrey;
 }
@@ -154,6 +150,10 @@ iframe {
 /*-----------------------------*/
 /* NAVIGATION UNDERLINE EFFECT */
 /*-----------------------------*/
+
+/*------------*/
+/* UPTO HERE */
+/*------------*/
 
 /* Create a grey 4px line that appears which will appear when the user hovers */
 /* This appears below each of the navigational items after its been selected*/
@@ -386,7 +386,7 @@ However this implementation is not the best as its not really visible */
 /*    float: left;*/
     width: 40%;
     margin: 0 auto;
-    height: auto;
+/*    height: auto;*/
     padding: 0 20px 0 20px;
     
 }
