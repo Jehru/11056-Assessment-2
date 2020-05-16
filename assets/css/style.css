@@ -520,17 +520,11 @@ Also adding a background colour when the user hovers over it */
         padding: 60px 30px;
     }
     
-    
-/* FIX THE FIGURE ON TABLET */
-    figcaption {
+    .big-img-figure img {
+        display: block;
+        margin: 0 auto;
         width: 80%;
-        margin: 20px auto;
-        margin-top: 20px;
-        font-size: 0.4em;
-    }
-    
-    figcaption a {
-        font-size: 1em;
+        text-align: center;
     }
     
     
