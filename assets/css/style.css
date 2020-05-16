@@ -151,12 +151,10 @@ iframe {
 /* NAVIGATION UNDERLINE EFFECT */
 /*-----------------------------*/
 
-/*------------*/
-/* UPTO HERE */
-/*------------*/
-
+/* Hover line that occurs underneath the html list */
 /* Create a grey 4px line that appears which will appear when the user hovers */
-/* This appears below each of the navigational items after its been selected*/
+/* This appears below each of the navigational items*/
+/* It also has an animation */
 #navigation li a:after {    
         bottom: 0;
         content: "";
@@ -168,7 +166,7 @@ iframe {
         width: 0;
 }
 
-/* Code which tells the line to appear after the user hovers */
+/* Make the line to appear when the user hovers */
 #navigation li a:hover:after { 
         width: 100%; 
         left: 0; 
@@ -179,7 +177,8 @@ iframe {
 /*----- HOME PAGE HERO ----*/
 /*-------------------------*/
 
-/* Hero image on the home page (the hero images also have parrallax scrolling) */
+/* Hero image on the home page (the hero images all have parrallax scrolling) */
+/* Also all hero images have a slighty opaque black overlay */
 #hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/extra1-churchill-house-by-robin%20boyd-photo-copyright-darren-bradley.jpg');
     height: 750px;
@@ -189,7 +188,7 @@ iframe {
     background-position: center;
 }
 
-/* This is the positioning of the hero text on the main page */
+/* The positioning of the hero on top of the hero image on the home page */
 #hero-text {
     position: absolute;
     top: 40%;
@@ -199,12 +198,6 @@ iframe {
 
 /* Hides the image which was added through html. This is better for accessibility as people with a 
 screen reader could not read the image which was added through css */
-
-
-/*-------------------------------------------------------------------------*/
-/* NEED TO INCLUDE A HIDDEN IMAGE FOR ALL THE PAGES WHICH USE A HERO IMAGE */
-/*-------------------------------------------------------------------------*/
-
 #hero-img-hidden {
     visibility: hidden;
     width: 100%;
@@ -247,8 +240,7 @@ screen reader could not read the image which was added through css */
     background-position: center;
 }
 
-/* This is the positioning of the hero text on the description, history and architecture 
-pages */
+/* This is the positioning of the text on top of the hero image on the description, history and architecture pages */
 #hero-text-alt {
     position: absolute;
     top: 40%;
@@ -257,21 +249,20 @@ pages */
     font-size: 70px;
 }
 
-
 /*-------------------------*/
 /*----- WRAPPER TEXT ------*/
 /*-------------------------*/
 
 /* The wrapper specifies the how the main content looks */
+/* Keep all the written content narrow so its easier to read, also centered the content and give it an appropriate line height */
 .wrapper {
     width: 40%;
     margin: 110px auto;
     line-height: 23px; 
 }
 
-/* This alternate wrapper is used as the title on the image 
-carousel, the main purpose is to connect the slider to the heading text
-without creating a 110px distance between these two */
+/* This alternate wrapper is used as the title on the image carousel */
+/* The main purpose is to connect the slider to the heading text without creating a 110px distance between the two */
 .wrapper-no-padding {
     width: 40%;
     margin: 0 auto;
@@ -279,14 +270,14 @@ without creating a 110px distance between these two */
 }
 
 
-/*---------------------------------------*/
-/* TEXT AND IMAGE SIDE BY SIDE CONTAINER */
-/*---------------------------------------*/
+/*-----------------------------*/
+/* TEXT AND IMAGE SIDE BY SIDE */
+/*-----------------------------*/
 
 /* This is used in the description page to highlight the north wing */
-/* An image and text are used in the same box */
+/* An image and text are used in the same box sitting next to each other */
 
-/* Sets the main contaniner on the page */
+/* Sets the main contaniner on the page in a light-grey box. This occurs when text and images are sitting next to each other */
 .text-img-container {
     display: flex;
     background-color: lightgrey;
@@ -294,8 +285,7 @@ without creating a 110px distance between these two */
     margin: 0 auto;
 }
 
-/* As the box is made up of two divs, this styles these two sides by giving 
-them borders */
+/* As the box is made up of two divs, this styles these two sides by giving some padding between the edge of the container and the content inside */
 .text-img-container div {
     margin: 10px;
     padding: 60px;
@@ -304,13 +294,13 @@ them borders */
     text-align: center;
 }
 
-/* Sets the line height and font size for the text side (left) */
+/* Sets the line height and font size for the text side (left side of the container) */
 .text-img-container div p{
     font-size: 17px;
     line-height: 23px;
 }
 
-/* Sets the style for the image in the image side (right) */
+/* Sets the style for the image in the image side (right side of container). By giving it a percentage width it will adapt to different screen sizes */
 .text-img-container div img{
     display: inline-block;
     vertical-align: middle;
@@ -323,46 +313,45 @@ them borders */
 /*-------------------------*/
 
 /* Most of the image styling is for individual items as different images needed
-different treatment to get them working on the site */
+different treatment to get them looking good on the website */
 
 /* The image row and column refer to when two images are placed side by side.
-This occurs on the home page and the architect page. They are placed in a flexbox
-so they remain responsive. */ 
+This occurs on the home page and the architect page. They are placed in a flexbox so they remain responsive. */ 
 
+/* Sets the row of the images */
 .image-row {
     background-color: lightgrey;
     padding: 5%;
 }
 
+/* Styling for each image in the row */
 .image-column {
-/*    background-color: darkgrey;*/
     width: 48.5%;
     padding: 5px;
 }
 
-/* This class refers to horizontal images which (are mostly on the description page)*/
+/* This class refers to horizontal images which (most are on the Description page). This gives the images a 50% width so that they have a consitent look accross different screen sizes */
 .big-img-horz {
     display: block;
     margin: 0 auto;
     width: 50%;
 }
 
-/* This class refers to the horizontal image on the history page. It needed special treatment 
-as it was interfering with the footer */
+/* This class is for horizontal images with a 40px margin on the bottom, One is found on the History page. It needed a 40px bottom margin as it was interfering with the footer */
 .big-img-horz-margin {
     display: block;
     margin: 0 auto 40px;
     width: 50%;
 }
 
-/* This is the styling for the only figure found on the architect page */
+/* This centres the figure image found on the Architect page */
 .big-img-figure {
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 
-/* This class specifies the styling for the vertical image found on the history page */
+/* This class specifies the styling for the vertical image found on the History page. It sets a specific height rather than width otherwise it would be too big */
 .big-img-vert {
     display: block;
     margin: 0 auto;
@@ -432,7 +421,6 @@ footer p {
     text-decoration: none;
     padding: 15px 20px;
     position: relative;
-/*    background-color: grey;*/
     border: 1px solid black;
 }
 
@@ -455,10 +443,6 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (min-width: 1024px) {
     
-    body {
-        background-color: red;
-    }
-    
     /* Remove the mobile menu so its not visible in the tablet view */
     .menu-wrap {
         display: none;
@@ -474,11 +458,6 @@ Also adding a background colour when the user hovers over it */
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
-    body {
-        background-color: blue;
-    }
-    
     
     .wrapper {
         width: 70%;
@@ -700,10 +679,6 @@ Also adding a background colour when the user hovers over it */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation:landscape) {
     
-    body {
-        background-color: purple;
-    }
-    
     #hero-text {
         position: absolute;
         top: 55%;
@@ -729,10 +704,6 @@ Also adding a background colour when the user hovers over it */
 /*------------------------------------*/
 
 @media screen and (max-width: 767px) {
-    
-    body {
-        background-color: green;
-    }
     
     main {
         font-size: 1.5em;
