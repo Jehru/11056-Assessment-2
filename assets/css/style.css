@@ -3,9 +3,11 @@
 /*-------------------------*/
 
 /* IMPORT RESET CSS */
+/* Resets any default styling by the browser */
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 
 /* IMPORT FONTS */
+/* Roboto in weights 300, 400 and 700 (light, regular and bold)*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 
@@ -679,7 +681,7 @@ footer p {
 
 /*------------------------------------*/
 /*-- Screen Between 768 and 1023px ---*/
-/*------------ Tablet View -----------*/
+/*- Tablet View ORIENTATION LANDSCAPE -*/
 /*------------------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation:landscape) {
@@ -868,7 +870,7 @@ footer p {
         line-height: 0px; 
     }
     
-    /* Adjusting the styling for the images in the */
+    /* Adjusting the styling for the images in the images in the carousel */
     .carousel-img {
         margin: 0 auto;
         width: auto;
@@ -877,10 +879,12 @@ footer p {
     }
     
     
-    /*------ MOBILE MENU ------*/
-
-    /* Adjusting the navigation bar and hero content */
-    /**/
+    /*------ Mobile Navigation ------*/
+    /* Is similar to tablet navigation however its all larger */
+    
+    /* Fix up the navigation so it only appears at the top on smaller screen sizes */
+    /* The navigation also no longer has the javascript sticky header effect. The position 0 is set to !important which means it no longer moves */
+    /* The rest of the navigation bar remains similar to the desktop view */
     #navigation{
         background-color: white;
         list-style-type: none;
@@ -895,34 +899,39 @@ footer p {
         height: 200px;
     }
     
+    /* Sets a variable text size and variable margin for the "Churchill House" text in the top left corner */
     #logo {
         font-size: 4em;
         margin: 5vw;
     }
     
+    /* Makes the hero image larger as it appeared too small on mobile screens to know what the image was */
     #hero-img {
         height: 1000px;
     }
     
+    /* Makes the description page hero image larger as it appeared too small on mobile screens to know what the image was */
     #hero-img-desc {
         height: 1000px;
     }
     
+    /* Makes the history page hero image larger as it appeared too small on mobile screens to know what the image was */
     #hero-img-hist {
         height: 1000px;
     }
     
+    /* Makes the architecture page hero image larger as it appeared too small on mobile screens to know what the image was */
     #hero-img-arch {
         height: 1000px;
     }
     
     
-    /* Remove the desktop menu navigation list from the nav bar */
+    /* Remove the desktop menu */
     .nav-element {
         display:none;
     }
     
-    /* Menu Wrap is the main wrapping container for the whole mobile menu. This makes sure the mobile menu appears above the rest of the content */
+    /* Menu Wrap is the main wrapping container for the whole mobile menu. This makes sure the mobile menu appears above the rest of the content on the page */
     .menu-wrap {
         position: absolute;
         top: 0;
@@ -930,7 +939,7 @@ footer p {
         z-index: 1;
     }
     
-    /* Toggler is the invisible checkbox which sees if the menu has been selected. If it has been selected the mobile menu will appear*/
+     /* Toggler is the invisible checkbox which sees if the menu has been pressed. If it has been selected the mobile menu will appear */
     .toggler {
         position: absolute;
         top: 0;
@@ -943,7 +952,7 @@ footer p {
         margin: 0px;
     }
     
-    /* Hamburger is the class for the hamburger icon */
+    /* Hamburger is the class for the hamburger icon. Its filled in white with a grey background */
     .hamburger {
         position: absolute;
         top: 0;
@@ -960,17 +969,17 @@ footer p {
     }
     
     
-    /* This is the class for the x icon to dismiss the menu once you open it */
+    /* Remove the "X" icon from view unless */
     .hamburger-exit{
         display: none;
     }
     
-    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The hamburger icon therefore becomes invisible. */
+    /* This checks to see if the toggler is checked. If the toggler is checked than the user has clicked to open the mobile menu, the hamburger icon therefore becomes invisible */
     .toggler:checked ~ .hamburger {
         visibility: hidden;
     }
     
-    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The X icon therefore appears in the spot where the hamburger menu was. */
+    /* This checks to see if the toggler is checked. If it is checked than the user has clicked to open the mobile menu. The X icon therefore appears in the spot where the hamburger menu was */
     .toggler:checked ~ .hamburger-exit {
         display: flex;    
         position: absolute;
@@ -1002,7 +1011,7 @@ footer p {
         transition:  opacity 0.4s ease 0.4s;
     }
 
-    /* This sets the position of the grey overlay menu. It is of course invisible until the user clicks the checkbox*/
+    /* This sets the position of the grey overlay menu. It is invisible until the user clicks the checkbox */
     .menu {
         position: fixed;
         top: 0;
@@ -1039,7 +1048,7 @@ footer p {
         transition: opacity 0.4s ease;
     }
     
-    /* Main styling for the list items. Sets the font size and padding for the mobile navigation */
+    /* Main styling for the list items. Sets the font size and padding for each of the links */
     .mobile-menu li {
         list-style: none;
         color: #fff;
@@ -1047,7 +1056,7 @@ footer p {
         padding: 3rem;
     }
     
-    /* Styling for the link tags tags*/
+    /* Styling for the link tags. Removes any other link styling */
     .mobile-menu > li > a {
         color: inherit;
         text-decoration: none;
